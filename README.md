@@ -1,2 +1,2 @@
-# AS
+# Apocalypse Survivor
 Minecraft Apocalypse Survivor map

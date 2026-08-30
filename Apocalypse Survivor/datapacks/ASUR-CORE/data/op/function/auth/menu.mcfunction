@@ -1,0 +1,3 @@
+#Auth Menu
+
+dialog show @s {type:"confirmation",title:{translate:"op.menu.auth.title"},body:[{type:"item",item:{id:"barrier"},show_tooltip:false},{type:"plain_message",contents:{translate:"op.menu.auth.line.1"}},{type:"plain_message",contents:{translate:"op.menu.auth.line.2"}},{type:"plain_message",contents:{translate:"op.menu.auth.line.3"}}],can_close_with_escape:true,after_action:"close",pause:false,no:{label:{translate:"gui.cancel"}},yes:{label:{translate:"op.menu.auth.validate",color:"green"},action:{type:"run_command",command:"/function op:auth/self_redirect"}}}

@@ -1,0 +1,68 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "as:hud_space"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["A"],"file": "as:gui/hud/meat_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["a"],"file": "as:gui/hud/meat_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["s"],"file": "as:gui/hud/meat_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["D"],"file": "as:gui/hud/vegie_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["d"],"file": "as:gui/hud/vegie_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["f"],"file": "as:gui/hud/vegie_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["G"],"file": "as:gui/hud/fruit_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["g"],"file": "as:gui/hud/fruit_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["h"],"file": "as:gui/hud/fruit_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["J"],"file": "as:gui/hud/cake_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["j"],"file": "as:gui/hud/cake_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -26,"height": 9,
+            "chars": ["k"],"file": "as:gui/hud/cake_half.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["Z"],"file": "as:gui/hud/water_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["z"],"file": "as:gui/hud/water_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -16,"height": 9,
+            "chars": ["x"],"file": "as:gui/hud/water_half.png"
+        }
+    ]
+}

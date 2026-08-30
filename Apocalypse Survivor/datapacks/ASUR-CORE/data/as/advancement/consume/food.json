@@ -1,0 +1,19 @@
+{
+    "criteria": {
+        "consume_food": {
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "predicates": {
+                        "custom_data": {
+                            "food": {}
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "as:player/stats/consumed/trigged"
+    }
+}

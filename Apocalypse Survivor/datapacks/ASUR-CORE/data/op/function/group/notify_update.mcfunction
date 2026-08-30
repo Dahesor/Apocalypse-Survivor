@@ -1,0 +1,1 @@
+execute as @a if score @s zzzgroup_update matches 1 run function op:group/self/update

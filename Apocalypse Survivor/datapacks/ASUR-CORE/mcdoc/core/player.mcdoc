@@ -1,0 +1,11 @@
+dispatch minecraft:storage["as:player"] to struct{
+    players?: [Player],
+    temp?: Player,
+    "__UIDGET__"?: struct{UID?: int},
+}
+
+struct Player{
+    UID?: int,
+    Name?: string,
+    UUID?: #[uuid] string,
+}

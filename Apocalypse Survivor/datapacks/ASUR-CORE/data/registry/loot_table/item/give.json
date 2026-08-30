@@ -1,0 +1,31 @@
+{
+    "type": "command",
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "slots",
+                    "slot_source": {
+                        "type": "slot_range",
+                        "slots": "container.0",
+                        "source": "this"
+                    }
+                }
+            ]
+        }
+    ],
+    "functions": [
+        {
+            "function": "set_count",
+            "count": {
+                "type": "minecraft:score",
+                "score": "calculator",
+                "target": {
+                    "type": "fixed",
+                    "name": "#count"
+                }
+            }
+        }
+    ]
+}

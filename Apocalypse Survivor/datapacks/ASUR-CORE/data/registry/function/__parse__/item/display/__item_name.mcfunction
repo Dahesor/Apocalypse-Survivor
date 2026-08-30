@@ -1,0 +1,2 @@
+$data modify storage registry:item ztemp.display.item_name set value {translate:"item.$(id).name",color:"white",italic:false}
+data modify storage registry:item ztemp.display.item_name.color set from storage ram: color

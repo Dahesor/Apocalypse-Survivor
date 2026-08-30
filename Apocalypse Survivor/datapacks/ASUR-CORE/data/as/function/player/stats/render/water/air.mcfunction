@@ -1,0 +1,2 @@
+execute unless score @s monitor.air matches ..299 if entity @s[tag=used_air] run function as:player/stats/render/water/to_ground
+execute if score @s monitor.air matches ..299 unless entity @s[tag=used_air] run function as:player/stats/render/water/to_water

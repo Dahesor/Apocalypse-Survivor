@@ -1,0 +1,20 @@
+dispatch mcdoc:custom_data["food"] to struct FoodItem{
+    // Scale: 10 = half an icon
+    fruit?: int @ 0..,
+    // Scale: 10 = half an icon
+    meat?: int @ 0..,
+    // Scale: 10 = half an icon
+    vegie?: int @ 0..,
+    // Scale: 10 = half an icon
+    cake?: int @ 0..,
+    // Scale: 10 = half an icon
+    water?: int @ 0..,
+    // Type: if it is something to eat or drink
+    type?: ("eat"|"drink"),
+    // How long it takes to eat
+    consume_sec?: float @ 0..
+}
+
+dispatch mcdoc:custom_data["item"] to struct{
+    id?: #[id="as:item"] string,
+}

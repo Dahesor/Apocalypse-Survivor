@@ -1,0 +1,1 @@
+$data modify storage ram: dialog.dialog.body[1].contents[1].click_event.command set value "/function op:group/manage/edit_members {id:$(id)}"

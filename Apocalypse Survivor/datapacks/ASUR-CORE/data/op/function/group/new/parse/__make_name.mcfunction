@@ -1,0 +1,1 @@
+$data modify storage ram: this set value "$(this)$(char)"

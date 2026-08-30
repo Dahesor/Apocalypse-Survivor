@@ -1,0 +1,9 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "revive_cd": {
+            "min": 1
+        }
+    }
+}

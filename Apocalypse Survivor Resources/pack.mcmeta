@@ -1,0 +1,16 @@
+{
+  "pack": {
+    "description": "Apocalypse Survivor Resources",
+        "min_format": 65,
+        "max_format": 100
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "lang",
+        "min_format": 88,
+        "max_format": 1000
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+$data modify storage registry:item ztemp.display.lore_resolved[-1].with append value {text:"$(i)$(str)",color:"aqua"}

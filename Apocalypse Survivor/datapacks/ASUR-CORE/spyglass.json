@@ -1,0 +1,12 @@
+{
+    "env": {
+        "gameVersion": "26.2",
+        "dependencies": [
+            "file:///C:/Users/dahes/Documents/.minecraft/versions/Apocalypse%20Survivor/dependency/",
+            "file:///C:/Users/dahes/Documents/.minecraft/versions/Apocalypse%20Survivor/resourcepacks/Apocalypse%20Survivor%20Resources",
+            "@vanilla-datapack",
+			"@vanilla-resourcepack",
+			"@vanilla-mcdoc"
+        ]
+    }
+}

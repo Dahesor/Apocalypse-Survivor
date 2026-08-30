@@ -1,0 +1,36 @@
+use::java::util::text::Text
+use::java::util::text::TextColor
+use ::java::world::component::CustomData
+use ::java::world::component::DataComponentPatch
+use ::lib::dialogmix::DialogMix
+use ::lib::dialogmix::DialogBodyMix
+use ::java::util::slot::SlottedItem
+
+dispatch minecraft:storage["ram:"] to struct Ram{
+    text?: Text,
+    data?: CustomData,
+    stack?: [Ram],
+    color?: (#[color="hex_rgb"] string | #[color="named"] TextColor),
+    components?: DataComponentPatch,
+    i?: struct{[TempInts]?: (int), f?: float, d?: double, str?: string},
+    dialog?: struct{
+        dialog?: DialogMix,
+        body?: [DialogBodyMix]
+    },
+    form?: Form,
+    char?: string @ ..1,
+    this?: any,
+    item?: SlottedItem<byte @ 0..35>,
+    container?: [SlottedItem<byte @ 0..35>],
+}
+
+type TempInts = ("i"|"x"|"y"|"z"|"j"|"dx"|"dy"|"dz")
+
+struct Form{
+    tag?: string,
+    fullname?: string,
+    leader?: string,
+    members?: string,
+    id?: int,
+    member_list?: [string],
+}

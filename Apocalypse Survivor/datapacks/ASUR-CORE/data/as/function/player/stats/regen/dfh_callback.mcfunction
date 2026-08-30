@@ -1,0 +1,1 @@
+scoreboard players set $reduce_hunger dfh.var 0

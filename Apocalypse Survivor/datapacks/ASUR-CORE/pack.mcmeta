@@ -1,0 +1,41 @@
+{
+  "pack": {
+    "description": "Apocalypse Survivor Core",
+    "min_format": 26,
+    "max_format": 107,
+    "pack_format": 107,
+    "supported_formats": [
+      26,
+      107
+    ]
+  },
+  "filter": {
+    "block": [
+      {
+        "namespace": "minecraft",
+        "path": "recipe/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "advancement/*"
+      },
+      {
+        "namespace": "minecraft",
+        "path": "loot_table/*"
+      }
+    ]
+  },
+  "overlays": {
+    "entries": [
+      {
+        "directory": "lib",
+        "formats": [
+          48,
+          200
+        ],
+        "min_format": 48,
+        "max_format": 200
+      }
+    ]
+  }
+}

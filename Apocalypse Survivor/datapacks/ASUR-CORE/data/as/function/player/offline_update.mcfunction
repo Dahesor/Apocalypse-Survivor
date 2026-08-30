@@ -1,0 +1,1 @@
+execute if score @s zzzgroup_update matches 1 run function dah.sch:set {time:2,run:"function op:group/self/update"}

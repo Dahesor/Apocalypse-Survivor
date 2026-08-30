@@ -1,0 +1,20 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "as:hud_space"
+        },
+        {
+            "type": "bitmap","ascent": -6,"height": 9,
+            "chars": ["Z"],"file": "as:gui/hud/water_full.png"
+        },
+        {
+            "type": "bitmap","ascent": -6,"height": 9,
+            "chars": ["z"],"file": "as:gui/hud/water_empty.png"
+        },
+        {
+            "type": "bitmap","ascent": -6,"height": 9,
+            "chars": ["x"],"file": "as:gui/hud/water_half.png"
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+dispatch minecraft:storage["persistent:"] to struct{
+    groups?: [Group],
+    new?: Group,
+    this?: Group,
+    run?: [Group]
+}
+
+struct Group {
+    id?: (int @ 1..| -1),
+    tag?: string,
+    full_name?: string,
+    leader?: GroupPlayer,
+    players?: [GroupPlayer]
+}
+
+struct GroupPlayer{
+    name?: string,
+    logged_in?: boolean,
+    UUID?: #[uuid] string,
+    UUID_array?: int[] @ 4,
+}

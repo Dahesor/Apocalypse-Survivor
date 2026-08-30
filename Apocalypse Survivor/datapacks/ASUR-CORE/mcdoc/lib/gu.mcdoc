@@ -1,0 +1,4 @@
+dispatch minecraft:storage["gu:main"] to struct{
+    out?: #[uuid] string,
+    in?: int[] @ 4..,
+}

@@ -1,0 +1,60 @@
+use::java::util::text::Text
+use::java::util::text::TextStyle
+use::java::world::item::ItemStack
+use ::java::world::component::CustomData
+
+dispatch minecraft:storage["registry:item"] to struct {
+    entry?: [ItemRegistryEntry],
+    new?: NewItemEntry,
+    this?: ItemRegistryEntry,
+    ztemp?: ItemRegistryEntry,
+}
+
+struct ItemRegistryEntry {
+    ...NewItemEntry,
+    stack?: ItemStack,
+    display?: struct{
+        lore_resolved?: [Text],
+        item_name?: Text,
+    },
+}
+
+struct NewItemEntry{
+    id?: #[id(registry="as:item",definition=true)] string,
+    lore?: [TextDescription],
+    components?: RegistryComponents,
+    data?: CustomData,
+    item?: #[id(registry="item", exclude=["air"])] string,
+    rarity?: ItemRarity,
+    model?: #[id="item_definition"] string,
+    /// How many items can be stacked together
+    max_stack_size?: int @ 1..99,
+}
+
+struct TextDescription{
+    style?: TextStyle,
+    with?: [TextVar],
+}
+
+struct TextVar{
+    type?: ("const"),
+    name?: #[score_holder] string,
+    extra?: string,
+}
+
+enum(string) ItemRarity{
+    initial = "initial",
+    common = "common",
+    refined = "refined",
+    rare = "rare",
+    epic = "epic",
+    legendary = "legendary",
+    mythic = "mythic",
+}
+
+type ItemDataComponent = #[id(registry="data_component_type", exclude=["additional_trade_cost", "creative_slot_lock", "map_post_processing","custom_data","lore","item_name","custom_name"])] string
+
+struct RegistryComponents{
+    [#[id(registry="data_component_type", prefix="!", exclude=["additional_trade_cost", "creative_slot_lock", "map_post_processing"])] string]: struct {},
+    [ItemDataComponent]: minecraft:data_component[[%key]],
+}

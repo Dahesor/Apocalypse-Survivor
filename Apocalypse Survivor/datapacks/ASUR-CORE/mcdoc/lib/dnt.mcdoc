@@ -1,0 +1,13 @@
+use::java::util::text::Text
+
+dispatch minecraft:storage["dnt:ram"] to struct{
+    in?: any,
+    out?: string,
+    sys?: struct{
+        version?: int,
+        VersionName?: string,
+        MCVersionRange?: string,
+        pong__?: boolean
+    },
+    args?: any,
+}

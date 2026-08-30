@@ -1,0 +1,2 @@
+$data modify storage persistent: new.players prepend from storage persistent: groups[{id:$(id)}].leader
+$data modify storage persistent: groups[{id:$(id)}].players set from storage persistent: new.players

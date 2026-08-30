@@ -1,0 +1,9 @@
+{
+    "condition": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "join_game": {
+            "min": 1
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "as:item/food/milk_bottle"
+    }
+}

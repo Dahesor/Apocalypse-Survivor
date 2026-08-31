@@ -1,6 +1,7 @@
 {
     "values": [
         "as:load",
-        "op:load"
+        "op:load",
+        "registry:register"
     ]
 }

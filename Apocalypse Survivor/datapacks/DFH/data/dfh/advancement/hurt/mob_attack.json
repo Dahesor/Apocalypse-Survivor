@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "#dfh:mob_attack"
+                            }
+                        ]
+                    }
+                },
+                "player": {
+                    "type": "inverted",
+                    "term": {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "type": "score",
+                            "target": {
+                                "type": "fixed",
+                                "name": "minecraft:mob_attack"
+                            },
+                            "score": "dfh.disabled_trigger"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "dfh:logic/types/mob_attack"
+    },
+    "parent": "dfh:root"
+}

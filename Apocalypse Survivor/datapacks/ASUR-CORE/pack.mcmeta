@@ -1,13 +1,8 @@
 {
   "pack": {
     "description": "Apocalypse Survivor Core",
-    "min_format": 26,
-    "max_format": 107,
-    "pack_format": 107,
-    "supported_formats": [
-      26,
-      107
-    ]
+    "min_format": 100,
+    "max_format": 120
   },
   "filter": {
     "block": [
@@ -29,11 +24,7 @@
     "entries": [
       {
         "directory": "lib",
-        "formats": [
-          48,
-          200
-        ],
-        "min_format": 48,
+        "min_format": 100,
         "max_format": 200
       }
     ]

@@ -5,5 +5,9 @@
   "item.food:rabbit_stew.name": "兔肉煲",
   "item.food:rabbit_stew.lore.1": "一口喝光简直能撑爆你",
   "item.food:milk_bottle.name": "奶瓶",
-  "item.food:milk_bottle.lore.1": "喝奶多是一件爽事"
+  "item.food:milk_bottle.lore.1": "喝奶多是一件爽事",
+  "item.treasure:nether_star.name": "下界之星",
+  "item.treasure:nether_star.lore.1": "熠熠生辉",
+  "item.treasure:diamond.name": "永恒之心",
+  "item.treasure:diamond.lore.1": "\"钻石恒久远\"...吗"
 }

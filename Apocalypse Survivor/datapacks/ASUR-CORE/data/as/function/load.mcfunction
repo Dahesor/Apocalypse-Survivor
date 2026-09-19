@@ -17,6 +17,7 @@ scoreboard objectives add Options dummy
 scoreboard objectives add join_game dummy
 scoreboard objectives add leave_game custom:leave_game
 scoreboard objectives add revive_cd dummy
+scoreboard objectives add effect_update dummy
 
 #Consts
 scoreboard players set #100 calculator 100
@@ -39,4 +40,5 @@ team modify blue nametagVisibility hideForOtherTeams
 
 # Storage inits
 data modify storage as:player __UIDGET__ set value {UID:0}
-data modify storage ram: i set value {d:0d,dx:0,dy:0,dz:0,f:0f,i:0,j:0,str:"",x:0,y:0,z:0}
+data modify storage ram: i set value {d:0d,dx:0,dy:0,dz:0,f:0f,i:0,j:0,str:"",x:0,y:0,z:0,id:""}
+

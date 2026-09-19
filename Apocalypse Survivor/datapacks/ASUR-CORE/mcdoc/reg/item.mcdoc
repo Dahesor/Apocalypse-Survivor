@@ -2,6 +2,7 @@ use::java::util::text::Text
 use::java::util::text::TextStyle
 use::java::world::item::ItemStack
 use ::java::world::component::CustomData
+use ::java::assets::item_definition::ItemModel
 
 dispatch minecraft:storage["registry:item"] to struct {
     entry?: [ItemRegistryEntry],
@@ -11,7 +12,8 @@ dispatch minecraft:storage["registry:item"] to struct {
 }
 
 struct ItemRegistryEntry {
-    ...NewItemEntry,
+    ...ItemEntry,
+    id?: #[id="as:item"] string,
     stack?: ItemStack,
     display?: struct{
         lore_resolved?: [Text],
@@ -21,6 +23,10 @@ struct ItemRegistryEntry {
 
 struct NewItemEntry{
     id?: #[id(registry="as:item",definition=true)] string,
+    ...ItemEntry,
+}
+
+struct ItemEntry{
     lore?: [TextDescription],
     components?: RegistryComponents,
     data?: CustomData,

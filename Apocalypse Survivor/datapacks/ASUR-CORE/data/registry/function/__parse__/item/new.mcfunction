@@ -34,6 +34,7 @@ data modify storage ram: components.minecraft:lore append from storage registry:
 
 # Item Classes
 execute if data storage registry:item ztemp.data.food run function registry:__parse__/item/class/food/main
+execute if data storage registry:item ztemp.data.treasure run function registry:__parse__/item/class/treasure/main
 
 #Add to Reg
 data modify storage registry:item ztemp.stack.components merge from storage ram: components

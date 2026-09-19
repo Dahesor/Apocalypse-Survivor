@@ -1,0 +1,42 @@
+dispatch minecraft:storage["registry:root"] to struct {
+    entry: [RootRegEntry],
+    task?: [RootRegEntry],
+    new: NewRootRegEntry,
+    this: RootRegEntry,
+    ready?: [struct{id?: #[id="as:reg"] string}],
+    ztemp?: RootRegEntry,
+}
+
+struct RootRegEntry{
+    /// ID of the registry
+    id?: #[id="as:reg"] string,
+    ...CommonRootRegEntry,
+}
+
+struct NewRootRegEntry{
+    /// ID of the registry
+    id?: #[id(registry="as:reg",definition=true)] string,
+    ...CommonRootRegEntry,
+}
+
+struct CommonRootRegEntry{
+    /// Folder of the registry, Also determines the function tag to be #registry:<folder>
+    folder?: string,
+    /// The storage location for this registry
+    pointer?: #[id=storage] string,
+    /// How entries in this registry should be registered
+    register?: struct{
+        /// `auto`:  delete the previous entries then call the function tag automatically
+        /// `manual`:  run a custom command
+        type?: ("auto"|"manual"),
+        ...register:root[[type]]
+    },
+    /// Only register entries in this registry if the following registries are already loaded
+    require?: [#[id="as:reg"] string],
+}
+
+dispatch register:root[auto] to struct{}
+dispatch register:root[manual] to struct{
+    /// The command to run to register entries manually
+    run?: #[command] string
+}

@@ -1,9 +1,9 @@
-use::java::util::text::Text
-use::java::util::text::TextColor
+use ::java::util::text::Text
+use ::java::util::text::TextColor
 use ::java::world::component::CustomData
 use ::java::world::component::DataComponentPatch
-use ::lib::dialogmix::DialogMix
-use ::lib::dialogmix::DialogBodyMix
+use ::mcdoc::lib::dialogmix::DialogMix
+use ::mcdoc::lib::dialogmix::DialogBodyMix
 use ::java::util::slot::SlottedItem
 
 dispatch minecraft:storage["ram:"] to struct Ram{
@@ -12,7 +12,7 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     stack?: [Ram],
     color?: (#[color="hex_rgb"] string | #[color="named"] TextColor),
     components?: DataComponentPatch,
-    i?: struct{[TempInts]?: (int), f?: float, d?: double, str?: string},
+    i?: struct{[TempInts]?: (int), f?: float, d?: double, str?: string, id?: string},
     dialog?: struct{
         dialog?: DialogMix,
         body?: [DialogBodyMix]

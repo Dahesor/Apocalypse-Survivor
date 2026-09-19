@@ -1,18 +1,10 @@
 {
-    "condition": "all_of",
+    "type": "all_of",
     "terms": [
+        "as:is_player",
         {
-            "condition": "reference",
-            "name": "as:is_player"
-        },
-        {
-            "condition": "inverted",
-            "term": [
-                {
-                    "condition": "reference",
-                    "name": "as:player/is_reviving"
-                }
-            ]
+            "type": "inverted",
+            "term": "as:player/is_reviving"
         }
     ]
 }

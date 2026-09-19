@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "#dfh:starve"
+                            }
+                        ]
+                    }
+                },
+                "player": {
+                    "type": "inverted",
+                    "term": {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "type": "score",
+                            "target": {
+                                "type": "fixed",
+                                "name": "minecraft:starve"
+                            },
+                            "score": "dfh.disabled_trigger"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "dfh:logic/types/starve"
+    },
+    "parent": "dfh:root"
+}

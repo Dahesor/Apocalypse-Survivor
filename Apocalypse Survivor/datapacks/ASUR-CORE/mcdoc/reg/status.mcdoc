@@ -1,0 +1,46 @@
+use::java::util::text::Text
+use::java::util::text::TextStyle
+use::java::world::item::ItemStack
+use ::java::world::component::CustomData
+
+dispatch minecraft:storage["registry:status"] to struct {
+    entry?: [StatusRegistryEntry],
+    new?: NewStatusEntry,
+    this?: StatusRegistryEntry,
+    ztemp?: StatusRegistryEntry,
+}
+
+struct StatusRegistryEntry {
+    ...StatusEntry,
+    id?: #[id="as:status"] string,
+    display?: struct{
+        Name?: Text,
+        Description?: Text,
+    }
+}
+
+struct NewStatusEntry {
+    ...StatusEntry,
+    id?: #[id(registry="as:status",definition=true)] string,
+}
+
+struct StatusEntry{
+    /// If the status needs a hook
+    hooks?: struct{
+        /// Run when the status is applied
+        on_apply?: #[command] string,
+        /// Run when the status is removed
+        after_remove?: #[command] string,
+        /// Run when the status is changed
+        when_changed?: #[command] string,
+        /// Run for players that was offline
+        to_clean?: #[command] string,
+    },
+    /// If the status needs a ticker function
+    ticker?: struct{
+        every?: ("tick"|"second"),
+        run?: #[command] string,
+    },
+    /// Icon of the status
+    icon?: string,
+}

@@ -1,0 +1,1 @@
+data modify storage dah:actbar data[].separator set from storage dah:actbar default_separator

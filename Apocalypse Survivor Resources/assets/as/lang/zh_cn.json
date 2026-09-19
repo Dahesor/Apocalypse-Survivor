@@ -43,5 +43,7 @@
     "rarity.epic": "史诗",
     "rarity.legendary": "传奇",
     "rarity.mythic": "神话",
-    "item_class.food":"饮食"
+    "item_class.food":"饮食",
+    "item_class.treasure":"贵重物品",
+    "item_class.treasure.price":"价格: ◇ %s"
 }

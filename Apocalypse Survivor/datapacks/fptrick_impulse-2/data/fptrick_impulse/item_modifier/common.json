@@ -1,0 +1,402 @@
+{
+    "type": "sequence",
+    "functions": [
+        {
+            "type": "set_components",
+            "components": {
+                "equippable": {
+                    "slot": "saddle",
+                    "equip_sound": "intentionally_empty"
+                }
+            }
+        },
+        {
+            "condition": {
+                "type": "any_of",
+                "terms": [
+                    {
+                        "type": "int_value_check",
+                        "test": 1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_x_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#x"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": -1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_x_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "max": -1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#x"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    }
+                ]
+            },
+            "type": "set_enchantments",
+            "enchantments": {
+                "fptrick_impulse:scale0_left_x_plus": {
+                    "type": "negate",
+                    "input": {
+                        "target": {
+                            "type": "fixed",
+                            "name": "#x_scale0"
+                        },
+                        "type": "score",
+                        "score": "fptrick_impulse"
+                    }
+                },
+                "fptrick_impulse:scale1_left_x_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale1"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale2_left_x_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale2"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale3_left_x_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale3"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                }
+            }
+        },
+        {
+            "condition": {
+                "type": "any_of",
+                "terms": [
+                    {
+                        "type": "int_value_check",
+                        "test": 1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_x_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "max": -1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#x"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": -1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_x_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#x"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    }
+                ]
+            },
+            "type": "set_enchantments",
+            "enchantments": {
+                "fptrick_impulse:scale0_left_x_minus": {
+                    "type": "negate",
+                    "input": {
+                        "target": {
+                            "type": "fixed",
+                            "name": "#x_scale0"
+                        },
+                        "type": "score",
+                        "score": "fptrick_impulse"
+                    }
+                },
+                "fptrick_impulse:scale1_left_x_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale1"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale2_left_x_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale2"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale3_left_x_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#x_scale3"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                }
+            }
+        },
+        {
+            "condition": {
+                "type": "any_of",
+                "terms": [
+                    {
+                        "type": "int_value_check",
+                        "test": 1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_z_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#z"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": -1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_z_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "max": -1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#z"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    }
+                ]
+            },
+            "type": "set_enchantments",
+            "enchantments": {
+                "fptrick_impulse:scale0_left_z_plus": {
+                    "type": "negate",
+                    "input": {
+                        "target": {
+                            "type": "fixed",
+                            "name": "#z_scale0"
+                        },
+                        "type": "score",
+                        "score": "fptrick_impulse"
+                    }
+                },
+                "fptrick_impulse:scale1_left_z_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale1"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale2_left_z_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale2"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale3_left_z_plus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale3"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                }
+            }
+        },
+        {
+            "condition": {
+                "type": "any_of",
+                "terms": [
+                    {
+                        "type": "int_value_check",
+                        "test": 1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_z_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "max": -1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#z"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": -1,
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#left_z_sign"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    },
+                    {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "target": {
+                                "type": "fixed",
+                                "name": "#z"
+                            },
+                            "type": "score",
+                            "score": "fptrick_impulse"
+                        }
+                    }
+                ]
+            },
+            "type": "set_enchantments",
+            "enchantments": {
+                "fptrick_impulse:scale0_left_z_minus": {
+                    "type": "negate",
+                    "input": {
+                        "target": {
+                            "type": "fixed",
+                            "name": "#z_scale0"
+                        },
+                        "type": "score",
+                        "score": "fptrick_impulse"
+                    }
+                },
+                "fptrick_impulse:scale1_left_z_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale1"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale2_left_z_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale2"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                },
+                "fptrick_impulse:scale3_left_z_minus": {
+                    "target": {
+                        "type": "fixed",
+                        "name": "#z_scale3"
+                    },
+                    "type": "score",
+                    "score": "fptrick_impulse"
+                }
+            }
+        }
+    ]
+}

@@ -3,7 +3,11 @@
 *.py[cod]
 *$py.class
 .DS_Store
-copy.bat
 *.so
 level.dat_old
 Apocalypse Survivor/players/
+session.lock
+r.58593.178.mca
+r.58593.179.mca
+r.58594.178.mca
+r.58594.179.mca

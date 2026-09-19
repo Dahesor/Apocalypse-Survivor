@@ -1,0 +1,40 @@
+{
+    "criteria": {
+        "hurt": {
+            "trigger": "entity_hurt_player",
+            "conditions": {
+                "damage": {
+                    "type": {
+                        "tags": [
+                            {
+                                "expected": true,
+                                "id": "#dfh:dfh___sys_with_knockback"
+                            }
+                        ]
+                    }
+                },
+                "player": {
+                    "type": "inverted",
+                    "term": {
+                        "type": "int_value_check",
+                        "test": {
+                            "min": 1
+                        },
+                        "value": {
+                            "type": "score",
+                            "target": {
+                                "type": "fixed",
+                                "name": "dfh:sys_with_knockback"
+                            },
+                            "score": "dfh.disabled_trigger"
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "dfh:logic/types/dfh___sys_with_knockback"
+    },
+    "parent": "dfh:root"
+}

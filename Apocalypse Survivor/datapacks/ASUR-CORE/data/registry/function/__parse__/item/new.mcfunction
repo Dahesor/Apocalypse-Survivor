@@ -5,7 +5,7 @@ data modify storage ram: components set value {}
 data modify storage ram: components."minecraft:lore" set value [""]
 
 #Item and as item id
-data modify storage registry:item ztemp.stack set value {id:"barrier",components:{"minecraft:custom_data":{item:{id:"_"}}}}
+data modify storage registry:item ztemp.stack set value {id:"stick",components:{"minecraft:custom_data":{item:{id:"_"}}}}
 data modify storage registry:item ztemp.stack.id set from storage registry:item ztemp.item
 data modify storage registry:item ztemp.stack.components."minecraft:custom_data".item.id set from storage registry:item ztemp.id
 data modify storage registry:item ztemp.stack.components."minecraft:custom_data" merge from storage registry:item ztemp.data

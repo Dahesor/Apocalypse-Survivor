@@ -41,4 +41,3 @@ team modify blue nametagVisibility hideForOtherTeams
 # Storage inits
 data modify storage as:player __UIDGET__ set value {UID:0}
 data modify storage ram: i set value {d:0d,dx:0,dy:0,dz:0,f:0f,i:0,j:0,str:"",x:0,y:0,z:0,id:""}
-

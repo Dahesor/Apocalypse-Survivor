@@ -1,6 +1,5 @@
 data modify storage registry:item new set value {\
     id:"food:milk_bottle",\
-    item:"ghast_tear",\
     model:"as:food/milk_bottle",\
     max_stack_size:4,\
     rarity:"refined",\

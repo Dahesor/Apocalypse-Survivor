@@ -1,0 +1,98 @@
+{
+	"format_version": "26.3",
+	"credit": "Text-free purple practice workbook",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "as:item/treasure/practice_workbook"
+	},
+	"elements": [
+		{
+			"name": "paper_block",
+			"from": [3.25, 1.25, 7.375],
+			"to": [12.75, 14.75, 8.625],
+			"faces": {
+				"north": {"uv": [6, 0, 11, 7], "texture": "#0"},
+				"east": {"uv": [0, 8, 6.75, 10], "rotation": 90, "texture": "#0"},
+				"south": {"uv": [6, 0, 11, 7], "texture": "#0"},
+				"west": {"uv": [0, 8, 6.75, 10], "rotation": 90, "texture": "#0"},
+				"up": {"uv": [0, 10.5, 4.75, 12.5], "texture": "#0"},
+				"down": {"uv": [0, 10.5, 4.75, 12.5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "front_cover",
+			"from": [3, 1, 7.125],
+			"to": [13, 15, 7.375],
+			"faces": {
+				"north": {"uv": [0, 0, 5, 7], "texture": "#0"},
+				"east": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"south": {"uv": [6, 0, 11, 7], "texture": "#0"},
+				"west": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"up": {"uv": [13.5, 0, 13.75, 5], "texture": "#0"},
+				"down": {"uv": [13.5, 0, 13.75, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "back_cover",
+			"from": [3, 1, 8.625],
+			"to": [13, 15, 8.875],
+			"faces": {
+				"north": {"uv": [6, 0, 11, 7], "texture": "#0"},
+				"east": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"south": {"uv": [6, 0, 11, 7], "texture": "#0"},
+				"west": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"up": {"uv": [13.5, 0, 13.75, 5], "texture": "#0"},
+				"down": {"uv": [13.5, 0, 13.75, 5], "texture": "#0"}
+			}
+		},
+		{
+			"name": "bound_spine",
+			"from": [12.625, 1, 7.375],
+			"to": [13, 15, 8.625],
+			"faces": {
+				"north": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"east": {"uv": [12, 0, 13, 7], "texture": "#0"},
+				"south": {"uv": [13.5, 0, 13.75, 7], "texture": "#0"},
+				"west": {"uv": [12, 0, 13, 7], "texture": "#0"},
+				"up": {"uv": [12, 0, 13, 0.25], "texture": "#0"},
+				"down": {"uv": [12, 6.75, 13, 7], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"rotation": [61.37, -67.37, 83.4],
+			"translation": [-1, 2, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"thirdperson_lefthand": {
+			"rotation": [-82.52, -81.18, 81],
+			"translation": [0.75, 0, -2],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"firstperson_righthand": {
+			"rotation": [180, -4.75, 180]
+		},
+		"firstperson_lefthand": {
+			"rotation": [-29.5, 73, 0]
+		},
+		"ground": {
+			"rotation": [90, -0.96, -0.93],
+			"translation": [0, -1.5, 0],
+			"scale": [0.6, 0.6, 0.6]
+		},
+		"gui": {
+			"rotation": [171.32, -3.04, 174.53],
+			"translation": [-0.75, 0, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "workbook",
+			"origin": [8, 8, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

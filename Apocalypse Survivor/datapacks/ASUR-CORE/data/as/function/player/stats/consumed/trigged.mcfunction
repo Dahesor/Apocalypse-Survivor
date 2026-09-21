@@ -12,4 +12,4 @@ execute if data storage ram: data.food.meat run function as:player/stats/consume
 execute if data storage ram: data.food.cake run function as:player/stats/consumed/cake
 execute if data storage ram: data.food.water run function as:player/stats/consumed/water
 
-function as:player/stats/render/update_all
+execute if predicate as:player/has_hud run function as:player/stats/render/update_all

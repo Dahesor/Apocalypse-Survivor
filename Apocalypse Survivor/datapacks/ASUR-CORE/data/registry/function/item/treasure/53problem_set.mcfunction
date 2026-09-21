@@ -1,11 +1,12 @@
 data modify storage registry:item new set value {\
-    id:"food:rabbit_stew",\
-    model:"rabbit_stew",\
-    max_stack_size:4,\
+    id:"treasure:53problem_set",\
     rarity:"epic",\
-    data:{food:{vegie:50,meat:30,water:60,type:"eat"}},\
+    data:{treasure:{price:553}},\
+    max_stack_size:1,\
     components:{},\
+    model:"as:treasure/53problem_set",\
     lore:[\
+        {},\
         {},\
     ],\
 }

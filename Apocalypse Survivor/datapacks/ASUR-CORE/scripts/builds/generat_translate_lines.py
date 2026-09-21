@@ -6,7 +6,7 @@ from typing import Any
 
 PROJECT_ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIR = PROJECT_ROOT / "data" / "registry" / "function" / "item"
-TARGET_FILE = PROJECT_ROOT / ".." / ".." /  ".." /  ".." / "resourcepacks" / "Apocalypse Survivor Resources" / "lang" / "assets" / "item" / "lang" / "zh_cn.json"
+TARGET_FILE = PROJECT_ROOT / "mkres" / "lang" / "assets" / "item" / "lang" / "zh_cn.json"
 
 ITEM_COMMAND = "data modify storage registry:item new set value"
 ID_PATTERN = re.compile(

@@ -2,8 +2,8 @@ use ::java::util::text::Text
 use ::java::util::text::TextColor
 use ::java::world::component::CustomData
 use ::java::world::component::DataComponentPatch
-use ::mcdoc::lib::dialogmix::DialogMix
-use ::mcdoc::lib::dialogmix::DialogBodyMix
+use ::lib::dialogmix::DialogMix
+use ::lib::dialogmix::DialogBodyMix
 use ::java::util::slot::SlottedItem
 
 dispatch minecraft:storage["ram:"] to struct Ram{

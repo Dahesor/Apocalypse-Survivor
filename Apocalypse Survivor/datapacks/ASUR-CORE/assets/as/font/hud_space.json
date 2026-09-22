@@ -1,0 +1,22 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "include/space"
+        },
+        {
+            "type": "space",
+            "advances": {
+                "*": -2,
+                "=": 10,
+                "Q": 72,
+                "W": 2,
+                "q": -78,
+                ".": 15,
+                ",": -15,
+                "+": 1,
+                "-": -1
+            }
+        }
+    ]
+}

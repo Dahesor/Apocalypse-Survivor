@@ -1,0 +1,22 @@
+{
+  "item.food:apple.name": "苹果",
+  "item.food:apple.lore.1": "每天一苹果",
+  "item.food:apple.lore.2": "医生远离我",
+  "item.food:rabbit_stew.name": "兔肉煲",
+  "item.food:rabbit_stew.lore.1": "一口喝光简直能撑爆你",
+  "item.food:milk_bottle.name": "奶瓶",
+  "item.food:milk_bottle.lore.1": "喝奶多是一件爽事",
+  "item.treasure:nether_star.name": "下界之星",
+  "item.treasure:nether_star.lore.1": "熠熠生辉",
+  "item.treasure:diamond.name": "永恒之心",
+  "item.treasure:diamond.lore.1": "\"钻石恒久远\"...吗",
+  "item.food:god_apple.name": "附魔金苹果",
+  "item.food:god_apple.lore.1": "卖掉可以获得无尽财富",
+  "item.food:god_apple.lore.2": "吃掉即可君临天下",
+  "item.treasure:microphone.name": "天下人",
+  "item.treasure:microphone.lore.1": "你为何歌唱?",
+  "item.treasure:microphone.lore.2": "——为了苍生",
+  "item.treasure:53problem_set.name": "五年数据包，三年模拟",
+  "item.treasure:53problem_set.lore.1": "一个世界中有且仅有两个实体",
+  "item.treasure:53problem_set.lore.2": "请问如何用一条命令交换它们的位置"
+}

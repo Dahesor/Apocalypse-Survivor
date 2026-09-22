@@ -1,0 +1,12 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "as:hud_icon"
+        },
+        {
+            "type": "reference",
+            "id": "include/space"
+        }
+    ]
+}

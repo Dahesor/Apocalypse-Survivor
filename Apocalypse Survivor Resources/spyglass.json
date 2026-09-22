@@ -1,0 +1,10 @@
+{
+    "env": {
+        "gameVersion": "26.3",
+        "dependencies": [
+            "@vanilla-datapack",
+			"@vanilla-resourcepack",
+			"@vanilla-mcdoc"
+        ]
+    }
+}

@@ -1,4 +1,12 @@
-function registry:item/treasure/nether_star
-function registry:item/treasure/diamond
-function registry:item/treasure/microphone
-function registry:item/treasure/53problem_set
+function registry:item/treasure/legendary/nether_star
+function registry:item/treasure/legendary/diamond
+function registry:item/treasure/legendary/microphone
+function registry:item/treasure/epic/53problem_set
+function registry:item/treasure/legendary/gold_statue
+function registry:item/treasure/epic/record_player
+function registry:item/treasure/epic/robot_fist
+function registry:item/treasure/mythic/terra_restore
+function registry:item/treasure/epic/ball_invite
+function registry:item/treasure/legendary/narcissus_sword
+function registry:item/treasure/epic/cassette_tape
+function registry:item/treasure/epic/cat_lamp

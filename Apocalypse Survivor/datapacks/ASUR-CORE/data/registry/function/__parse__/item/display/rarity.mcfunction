@@ -14,3 +14,10 @@ execute if data storage registry:item new{rarity:"rare"} run data modify storage
 execute if data storage registry:item new{rarity:"epic"} run data modify storage ram: components."minecraft:lore" prepend value {translate:"rarity.epic",color:"light_purple",italic:false}
 execute if data storage registry:item new{rarity:"legendary"} run data modify storage ram: components."minecraft:lore" prepend value {translate:"rarity.legendary",color:"gold",italic:false}
 execute if data storage registry:item new{rarity:"mythic"} run data modify storage ram: components."minecraft:lore" prepend value {translate:"rarity.mythic",color:"#DC4116",italic:false}
+
+
+execute if data storage registry:item new{rarity:"refined"} run data modify storage ram: components."minecraft:tooltip_style" set value "as:rarity/refined"
+execute if data storage registry:item new{rarity:"rare"} run data modify storage ram: components."minecraft:tooltip_style" set value "as:rarity/rare"
+execute if data storage registry:item new{rarity:"epic"} run data modify storage ram: components."minecraft:tooltip_style" set value "as:rarity/epic"
+execute if data storage registry:item new{rarity:"legendary"} run data modify storage ram: components."minecraft:tooltip_style" set value "as:rarity/legendary"
+execute if data storage registry:item new{rarity:"mythic"} run data modify storage ram: components."minecraft:tooltip_style" set value "as:rarity/mythic"

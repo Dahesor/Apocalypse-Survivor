@@ -1,13 +1,9 @@
 {
-	"format_version": "26.3",
-	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"textures": {
 		"0": "as:item/treasure/cassette_tape"
 	},
 	"elements": [
 		{
-			"name": "shell",
 			"from": [0, 4, 7],
 			"to": [16, 14, 9],
 			"faces": {
@@ -20,7 +16,6 @@
 			}
 		},
 		{
-			"name": "tape_head_edge",
 			"from": [2, 2, 6.75],
 			"to": [14, 4, 9.25],
 			"faces": {
@@ -56,14 +51,5 @@
 			"rotation": [0, -180, 0],
 			"scale": [0.85, 0.85, 0.85]
 		}
-	},
-	"groups": [
-		{
-			"name": "cassette_tape",
-			"origin": [8, 8, 8],
-			"scope": 0,
-			"color": 0,
-			"children": [0, 1]
-		}
-	]
+	}
 }

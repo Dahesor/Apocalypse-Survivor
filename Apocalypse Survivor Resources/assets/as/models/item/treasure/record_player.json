@@ -1,13 +1,9 @@
 {
-	"format_version": "26.3",
-	"credit": "Made with Blockbench",
-	"texture_size": [32, 32],
 	"textures": {
 		"0": "as:item/treasure/record_player"
 	},
 	"elements": [
 		{
-			"name": "wooden_plinth",
 			"from": [0, 2, 1],
 			"to": [16, 5, 15],
 			"faces": {
@@ -20,7 +16,6 @@
 			}
 		},
 		{
-			"name": "inset_deck",
 			"from": [0.5, 5, 1.5],
 			"to": [15.5, 5.5, 14.5],
 			"faces": {
@@ -33,7 +28,6 @@
 			}
 		},
 		{
-			"name": "rubber_foot",
 			"from": [1, 1, 2],
 			"to": [3, 2, 4],
 			"faces": {
@@ -46,7 +40,6 @@
 			}
 		},
 		{
-			"name": "rubber_foot",
 			"from": [1, 1, 12],
 			"to": [3, 2, 14],
 			"faces": {
@@ -59,7 +52,6 @@
 			}
 		},
 		{
-			"name": "rubber_foot",
 			"from": [13, 1, 2],
 			"to": [15, 2, 4],
 			"faces": {
@@ -72,7 +64,6 @@
 			}
 		},
 		{
-			"name": "rubber_foot",
 			"from": [13, 1, 12],
 			"to": [15, 2, 14],
 			"faces": {
@@ -85,7 +76,6 @@
 			}
 		},
 		{
-			"name": "stepped_vinyl",
 			"from": [3, 5.5, 3],
 			"to": [9, 6, 13],
 			"faces": {
@@ -98,7 +88,6 @@
 			}
 		},
 		{
-			"name": "stepped_vinyl",
 			"from": [2, 5.5, 4],
 			"to": [3, 6, 12],
 			"faces": {
@@ -111,7 +100,6 @@
 			}
 		},
 		{
-			"name": "stepped_vinyl",
 			"from": [9, 5.5, 4],
 			"to": [10, 6, 12],
 			"faces": {
@@ -124,7 +112,6 @@
 			}
 		},
 		{
-			"name": "stepped_vinyl",
 			"from": [1, 5.5, 6],
 			"to": [2, 6, 10],
 			"faces": {
@@ -137,7 +124,6 @@
 			}
 		},
 		{
-			"name": "stepped_vinyl",
 			"from": [10, 5.5, 6],
 			"to": [11, 6, 10],
 			"faces": {
@@ -150,7 +136,6 @@
 			}
 		},
 		{
-			"name": "spindle",
 			"from": [5.7, 6, 7.7],
 			"to": [6.3, 6.6, 8.3],
 			"faces": {
@@ -163,7 +148,6 @@
 			}
 		},
 		{
-			"name": "tonearm_mount",
 			"from": [12, 5.5, 11.5],
 			"to": [14, 6.2, 13.5],
 			"faces": {
@@ -176,7 +160,6 @@
 			}
 		},
 		{
-			"name": "tonearm_pivot",
 			"from": [12.5, 6.2, 12],
 			"to": [13.5, 7.4, 13],
 			"faces": {
@@ -189,7 +172,6 @@
 			}
 		},
 		{
-			"name": "tonearm",
 			"from": [12.65, 6.8, 5],
 			"to": [13.35, 7.4, 12.5],
 			"rotation": {"angle": 22.5, "axis": "y", "origin": [13, 7, 12.5]},
@@ -203,7 +185,6 @@
 			}
 		},
 		{
-			"name": "cartridge",
 			"from": [9.2, 6.1, 5],
 			"to": [10.7, 7.1, 6.5],
 			"faces": {
@@ -216,7 +197,6 @@
 			}
 		},
 		{
-			"name": "counterweight",
 			"from": [12.25, 6.7, 12.5],
 			"to": [13.75, 7.7, 14],
 			"faces": {
@@ -229,7 +209,6 @@
 			}
 		},
 		{
-			"name": "speed_knob",
 			"from": [12.3, 5.5, 2.5],
 			"to": [13.8, 6.3, 4],
 			"faces": {
@@ -242,7 +221,6 @@
 			}
 		},
 		{
-			"name": "power_button",
 			"from": [14.1, 5.5, 2.5],
 			"to": [15, 5.9, 3.4],
 			"faces": {
@@ -278,14 +256,5 @@
 			"rotation": [0, -180, 0],
 			"scale": [0.8, 0.8, 0.8]
 		}
-	},
-	"groups": [
-		{
-			"name": "record_player",
-			"origin": [8, 8, 8],
-			"scope": 0,
-			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
-		}
-	]
+	}
 }

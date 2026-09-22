@@ -9,6 +9,7 @@ dispatch minecraft:storage["registry:item"] to struct {
     new?: NewItemEntry,
     this?: ItemRegistryEntry,
     ztemp?: ItemRegistryEntry,
+    run?: [ItemRegistryEntry],
 }
 
 struct ItemRegistryEntry {

@@ -1,0 +1,19 @@
+{
+    "sources": [
+        {
+            "type": "single",
+            "resource": "as:item/plate/epic",
+            "sprite": "as:item/plate/epic"
+        },
+        {
+            "type": "single",
+            "resource": "as:item/plate/legendary",
+            "sprite": "as:item/plate/legendary"
+        },
+        {
+            "type": "single",
+            "resource": "as:item/plate/mythic",
+            "sprite": "as:item/plate/mythic"
+        }
+    ]
+}

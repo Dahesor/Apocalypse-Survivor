@@ -1,9 +1,8 @@
 data modify storage registry:item new set value {\
-    id:"treasure:diamond",\
-    item:"diamond",\
-    rarity:"legendary",\
-    data:{treasure:{price:8888}},\
-    max_stack_size:1,\
+    id:"food:coke",\
+    model:"as:food/square_cola",\
+    rarity:"refined",\
+    data:{food:{water:40,vegie:10,type:"drink"}},\
     components:{},\
     lore:[\
         {},\

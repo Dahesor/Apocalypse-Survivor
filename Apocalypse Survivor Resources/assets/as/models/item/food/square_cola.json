@@ -1,16 +1,9 @@
 {
-  "format_version": "26.3",
-  "credit": "Made with Blockbench",
-  "texture_size": [
-    32,
-    32
-  ],
   "textures": {
     "0": "as:item/food/square_cola"
   },
   "elements": [
     {
-      "name": "rectangular_can",
       "from": [
         5,
         2,
@@ -145,20 +138,5 @@
         0.8
       ]
     }
-  },
-  "groups": [
-    {
-      "name": "square_cola",
-      "origin": [
-        8,
-        8,
-        8
-      ],
-      "scope": 0,
-      "color": 0,
-      "children": [
-        0
-      ]
-    }
-  ]
+  }
 }

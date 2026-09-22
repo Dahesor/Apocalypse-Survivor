@@ -45,5 +45,5 @@
     "rarity.mythic": "神话",
     "item_class.food":"饮食",
     "item_class.treasure":"贵重物品",
-    "item_class.treasure.price":"价格: ◇ %s"
+    "item_class.treasure.price":"价值: ◇ %s"
 }

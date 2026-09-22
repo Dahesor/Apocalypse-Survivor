@@ -1,9 +1,9 @@
 data modify storage registry:item new set value {\
     id:"food:god_apple",\
-    item:"apple",\
+    model:"as:treasure/god_apple",\
     rarity:"mythic",\
     data:{food:{cake:20,fruit:120,type:"eat"},treasure:{price:19999}},\
-    components:{},\
+    components:{enchantment_glint_override:true},\
     lore:[\
         {},\
         {},\

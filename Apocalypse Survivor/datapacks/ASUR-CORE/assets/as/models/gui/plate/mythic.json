@@ -1,0 +1,6 @@
+{
+    "parent": "as:gui/plate/mod",
+    "textures": {
+        "layer0": "as:item/plate/mythic"
+    }
+}

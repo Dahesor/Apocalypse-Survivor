@@ -1,13 +1,9 @@
 {
-	"format_version": "26.3",
-	"credit": "Gray microphone - Minecraft-inspired pixel art",
-	"texture_size": [64, 32],
 	"textures": {
 		"0": "as:item/treasure/gray_microphone"
 	},
 	"elements": [
 		{
-			"name": "grip",
 			"from": [6.5, 1.5, 6.5],
 			"to": [9.5, 8.5, 9.5],
 			"faces": {
@@ -20,7 +16,6 @@
 			}
 		},
 		{
-			"name": "bottom_cap",
 			"from": [6.5, 1, 6.5],
 			"to": [9.5, 1.5, 9.5],
 			"faces": {
@@ -33,7 +28,6 @@
 			}
 		},
 		{
-			"name": "connector",
 			"from": [7, 0.5, 7],
 			"to": [9, 1, 9],
 			"faces": {
@@ -46,7 +40,6 @@
 			}
 		},
 		{
-			"name": "neck",
 			"from": [6.25, 8.5, 6.25],
 			"to": [9.75, 9.5, 9.75],
 			"faces": {
@@ -59,7 +52,6 @@
 			}
 		},
 		{
-			"name": "head_lower_bevel",
 			"from": [5.5, 9.5, 5.5],
 			"to": [10.5, 10, 10.5],
 			"faces": {
@@ -72,7 +64,6 @@
 			}
 		},
 		{
-			"name": "grille_body",
 			"from": [5, 10, 5],
 			"to": [11, 14, 11],
 			"faces": {
@@ -85,7 +76,6 @@
 			}
 		},
 		{
-			"name": "grille_top_step",
 			"from": [5.5, 14, 5.5],
 			"to": [10.5, 14.5, 10.5],
 			"faces": {
@@ -98,7 +88,6 @@
 			}
 		},
 		{
-			"name": "grille_crown",
 			"from": [6, 14.5, 6],
 			"to": [10, 15, 10],
 			"faces": {
@@ -111,7 +100,6 @@
 			}
 		},
 		{
-			"name": "head_rim",
 			"from": [4.875, 9.875, 4.875],
 			"to": [11.125, 10.375, 11.125],
 			"faces": {
@@ -124,7 +112,6 @@
 			}
 		},
 		{
-			"name": "grille_seam",
 			"from": [4.875, 11.75, 4.875],
 			"to": [11.125, 12.25, 11.125],
 			"faces": {
@@ -137,7 +124,6 @@
 			}
 		},
 		{
-			"name": "switch_recess",
 			"from": [7.25, 6.25, 6.375],
 			"to": [8.75, 8, 6.5],
 			"faces": {
@@ -150,7 +136,6 @@
 			}
 		},
 		{
-			"name": "switch_slider",
 			"from": [7.5, 7, 6.125],
 			"to": [8.5, 7.75, 6.375],
 			"faces": {
@@ -163,7 +148,6 @@
 			}
 		},
 		{
-			"name": "handle_highlight",
 			"from": [6.5, 2, 6.4375],
 			"to": [7, 5.5, 6.5],
 			"faces": {
@@ -203,14 +187,5 @@
 		"head": {
 			"translation": [0, 5.5, 0]
 		}
-	},
-	"groups": [
-		{
-			"name": "microphone",
-			"origin": [8, 1, 8],
-			"scope": 0,
-			"color": 0,
-			"children": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
-		}
-	]
+	}
 }

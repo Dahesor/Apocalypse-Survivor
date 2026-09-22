@@ -1,0 +1,34 @@
+{
+    "model": {
+        "type": "composite",
+        "models": [
+            {
+                "type": "select",
+                "property": "display_context",
+                "cases": [
+                    {
+                        "when": "gui",
+                        "model": {
+                            "type": "condition",
+                            "property": "carried",
+                            "on_false": {
+                                "type": "model",
+                                "model": "as:gui/plate/epic"
+                            },
+                            "on_true": {
+                                "type": "empty"
+                            }
+                        }
+                    }
+                ],
+                "fallback": {
+                    "type": "empty"
+                }
+            },
+            {
+                "type": "model",
+                "model": "as:item/treasure/ball_invite"
+            }
+        ]
+    }
+}

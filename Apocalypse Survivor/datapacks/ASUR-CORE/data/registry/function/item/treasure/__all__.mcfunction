@@ -10,3 +10,5 @@ function registry:item/treasure/epic/ball_invite
 function registry:item/treasure/legendary/narcissus_sword
 function registry:item/treasure/epic/cassette_tape
 function registry:item/treasure/epic/cat_lamp
+function registry:item/treasure/epic/fake_teapot
+function registry:item/treasure/mythic/emerald_necklace

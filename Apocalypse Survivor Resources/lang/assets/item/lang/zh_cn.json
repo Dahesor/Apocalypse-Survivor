@@ -45,5 +45,9 @@
   "item.treasure:narcissus_sword.lore.4": "何物象征拯救世界的孤独牺牲？",
   "item.treasure:cat_lamp.name": "猫灯",
   "item.treasure:cat_lamp.lore.1": "很受年轻人喜爱的床头灯",
-  "item.treasure:cat_lamp.lore.2": "\"喵嗷，是猫的了!\""
+  "item.treasure:cat_lamp.lore.2": "\"喵嗷，是猫的了!\"",
+  "item.treasure:fake_teapot.name": "赝品茶壶",
+  "item.treasure:fake_teapot.lore.1": "新的，纯新的，毫无争议的新",
+  "item.treasure:emerald_necklace.name": "山藤之歌",
+  "item.treasure:emerald_necklace.lore.1": "奢华的气息扑面而来"
 }

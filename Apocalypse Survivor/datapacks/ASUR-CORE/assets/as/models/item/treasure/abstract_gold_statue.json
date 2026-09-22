@@ -2,7 +2,6 @@
 	"textures": {
 		"0": "as:item/treasure/abstract_gold_statue"
 	},
-	"gui_light":"front",
 	"elements": [
 		{
 			"from": [3.5, 0, 4.5],
@@ -53,7 +52,7 @@
 			}
 		},
 		{
-			"from": [5.3, 2.4, 7],
+			"from": [5.3, 2.4, 6.95],
 			"to": [6.8, 7.1, 8.8],
 			"rotation": {"angle": -22.5, "axis": "z", "origin": [6, 2.4, 8]},
 			"faces": {
@@ -67,7 +66,7 @@
 		},
 		{
 			"from": [9.2, 2.4, 7],
-			"to": [10.7, 7.1, 8.8],
+			"to": [10.7, 7.1, 8.875],
 			"rotation": {"angle": 22.5, "axis": "z", "origin": [10, 2.4, 8]},
 			"faces": {
 				"north": {"uv": [0, 0, 8, 8], "texture": "#0"},
@@ -194,6 +193,7 @@
 			}
 		}
 	],
+	"gui_light": "front",
 	"display": {
 		"thirdperson_righthand": {
 			"rotation": [0, -90, 0],

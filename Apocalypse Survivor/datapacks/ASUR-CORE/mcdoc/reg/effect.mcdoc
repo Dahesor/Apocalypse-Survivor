@@ -3,7 +3,7 @@ use::java::util::text::TextStyle
 use::java::world::item::ItemStack
 use ::java::world::component::CustomData
 
-dispatch minecraft:storage["registry:status"] to struct {
+dispatch minecraft:storage["registry:effect"] to struct {
     entry?: [StatusRegistryEntry],
     new?: NewStatusEntry,
     this?: StatusRegistryEntry,
@@ -21,7 +21,7 @@ struct StatusRegistryEntry {
 
 struct NewStatusEntry {
     ...StatusEntry,
-    id?: #[id(registry="as:status",definition=true)] string,
+    id?: #[id(registry="as:effect",definition=true)] string,
 }
 
 struct StatusEntry{

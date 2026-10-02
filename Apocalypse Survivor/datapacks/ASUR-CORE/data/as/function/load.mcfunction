@@ -41,3 +41,4 @@ team modify blue nametagVisibility hideForOtherTeams
 # Storage inits
 data modify storage as:player __UIDGET__ set value {UID:0}
 data modify storage ram: i set value {d:0d,dx:0,dy:0,dz:0,f:0f,i:0,j:0,str:"",x:0,y:0,z:0,id:""}
+data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d","5":"e","6":"f","7":"g","8":"h","9":"i","10":"j","11":"k","12":"l","13":"m","14":"n","15":"o","16":"p","17":"q","18":"r","19":"s","20":"s"}

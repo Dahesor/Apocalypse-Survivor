@@ -2,7 +2,6 @@ use::java::util::text::Text
 use::java::util::text::TextStyle
 use::java::world::item::ItemStack
 use ::java::world::component::CustomData
-use ::java::assets::item_definition::ItemModel
 
 dispatch minecraft:storage["registry:item"] to struct {
     entry?: [ItemRegistryEntry],

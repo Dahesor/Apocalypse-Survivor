@@ -1,0 +1,18 @@
+{
+    "type": "add",
+    "inputs": [
+        {
+            "type": "storage",
+            "storage": "as:effect",
+            "path": "this[0].remaining"
+        },
+        {
+            "type": "score",
+            "score": "calculator",
+            "target": {
+                "type": "fixed",
+                "name": "$step"
+            }
+        }
+    ]
+}

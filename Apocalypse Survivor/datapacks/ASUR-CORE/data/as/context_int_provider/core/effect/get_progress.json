@@ -1,0 +1,19 @@
+{
+    "type": "div",
+    "left": {
+        "type": "mul",
+        "inputs": [
+            20,
+            {
+                "type": "storage",
+                "storage": "as:effect",
+                "path": "this[0].remaining"
+            }
+        ]
+    },
+    "right": {
+        "type": "storage",
+        "storage": "as:effect",
+        "path": "this[0].maximum"
+    }
+}

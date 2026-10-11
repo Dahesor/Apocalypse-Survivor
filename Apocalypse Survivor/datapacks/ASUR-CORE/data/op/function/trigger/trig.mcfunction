@@ -1,3 +1,5 @@
+#>@internal op:trigger/trig
+
 scoreboard players operation $this privilege_trigger = @s privilege_trigger
 scoreboard players set @s privilege_trigger 0
 execute unless function op:auth/validate run return run function op:auth/menu

@@ -1,3 +1,6 @@
+#>registry:root/__run__/depend_check/each
+# @private within %parent/%parent
+
 execute unless data storage registry:root ztemp.require[0] run return 1
 data modify storage ram: i.id set from storage registry:root ztemp.require[0]
 scoreboard players set #return calculator 0

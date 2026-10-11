@@ -1,3 +1,6 @@
+#>op:pages/group/new
+# @private within op:
+
 dialog show @s {type:"confirmation",after_action:"none",pause:false,\
     can_close_with_escape:true,\
     title:{translate:"op.menu.group.action.create"},\

@@ -1,3 +1,6 @@
+#>op:pages/group/build/add_buttons
+# @private within op:
+
 execute unless data storage persistent: run[0] run return 1
 data modify storage ram: dialog.dialog.actions append value {width:160,label:["[","","] ",""]}
 data modify storage ram: dialog.dialog.actions[-1].label[1] set from storage persistent: run[0].tag

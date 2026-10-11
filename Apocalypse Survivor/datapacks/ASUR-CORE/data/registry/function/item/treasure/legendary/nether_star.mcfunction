@@ -1,3 +1,6 @@
+#>registry:item/treasure/legendary/nether_star
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:nether_star",\
     model:"as:treasure/nether_star",\

@@ -1,5 +1,5 @@
-# Handles registering all entries.
-# Might have to async this in the future
+#>@public registry:register
+# ### Register all registries, then register all entries
 
 data modify storage registry:root entry set value []
 function #registry:root

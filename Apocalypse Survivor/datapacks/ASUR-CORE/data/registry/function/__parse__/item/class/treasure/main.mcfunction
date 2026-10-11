@@ -1,3 +1,5 @@
+#>@protected registry:__parse__/item/class/treasure/main
+
 data modify storage ram: components."minecraft:lore" append value ""
 data modify storage ram: components."minecraft:lore" append value {translate:"item_class.treasure",color:"light_purple",italic:false}
 data modify storage ram: components."minecraft:lore" append value {translate:"item_class.treasure.price",color:"green",italic:false,with:[0]}

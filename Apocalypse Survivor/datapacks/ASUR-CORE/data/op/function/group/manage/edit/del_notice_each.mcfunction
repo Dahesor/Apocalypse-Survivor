@@ -1,3 +1,6 @@
+#>op:group/manage/edit/del_notice_each
+# @private within op:
+
 function op:group/manage/__del_notice with storage persistent: this.players[0]
 
 data remove storage persistent: this.players[0]

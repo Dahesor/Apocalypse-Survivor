@@ -1,3 +1,5 @@
+#>@protected registry:__parse__/item/class/food/main
+
 data modify storage ram: components."minecraft:lore" append value ""
 data modify storage ram: components."minecraft:lore" append value {translate:"item_class.food",color:"blue",italic:false}
 

@@ -1,3 +1,6 @@
+#>registry:item/treasure/epic/53problem_set
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:53problem_set",\
     rarity:"epic",\

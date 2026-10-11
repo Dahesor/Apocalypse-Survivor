@@ -1,3 +1,6 @@
+#>registry:item/food/apple
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"food:apple",\
     item:"apple",\

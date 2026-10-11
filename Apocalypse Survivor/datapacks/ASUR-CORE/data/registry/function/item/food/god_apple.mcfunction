@@ -1,3 +1,6 @@
+#>registry:item/food/god_apple
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"food:god_apple",\
     model:"as:treasure/god_apple",\

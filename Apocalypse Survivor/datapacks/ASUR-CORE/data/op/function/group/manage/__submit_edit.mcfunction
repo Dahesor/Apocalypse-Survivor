@@ -1,3 +1,6 @@
+#>op:group/manage/__submit_edit
+# @private within op:
+
 $data modify storage ram: form set value $(form)
 
 data modify storage ram: form.member_list set value []

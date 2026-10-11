@@ -1,3 +1,6 @@
+#>registry:root/__run__/this
+# @private within registry:root
+
 execute unless data storage registry:root task[0] run return 1
 scoreboard players add #chain_length calculator 1
 execute if score #chain_length calculator matches 1000.. run tellraw @a [{color:"red",text:"[ERROR] Registry Loading Error:\n   At root registry runner: \n     \"Stack\" Overflow with infinite recursive dependencies."},{text:"\n   Stack Dump:\n      "},{storage:"registry:root",nbt:"task[]",separator:" ======== \n      ",color:"white"}]

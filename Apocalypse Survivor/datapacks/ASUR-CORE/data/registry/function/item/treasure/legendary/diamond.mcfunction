@@ -1,3 +1,6 @@
+#>registry:item/treasure/legendary/diamond
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:diamond",\
     model:"as:treasure/diamond",\

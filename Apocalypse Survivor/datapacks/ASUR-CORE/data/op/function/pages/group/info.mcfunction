@@ -1,3 +1,6 @@
+#>op:pages/group/info
+# @private within op:
+
 execute store result storage ram: i.i int 1 run scoreboard players remove $this privilege_input 100
 function op:group/manage/__get_entry with storage ram: i
 

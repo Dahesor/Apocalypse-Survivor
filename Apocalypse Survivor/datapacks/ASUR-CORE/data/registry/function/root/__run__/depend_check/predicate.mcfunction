@@ -1,3 +1,6 @@
+#>registry:root/__run__/depend_check/predicate
+# @private within %parent/%parent
+
 data modify storage registry:root ztemp set from storage registry:root this
 
 execute if function registry:root/__run__/depend_check/each run return 1

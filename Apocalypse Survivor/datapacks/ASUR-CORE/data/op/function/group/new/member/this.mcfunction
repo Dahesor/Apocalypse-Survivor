@@ -1,3 +1,6 @@
+#>op:group/new/member/this
+# @private within op:
+
 $scoreboard players set $(name) zzzgroup_update 1
 $scoreboard players operation $(name) group = $this group
 $execute if data storage persistent: groups[].players[{name:"$(name)"}] run data remove storage persistent: groups[].players[{name:"$(name)"}]

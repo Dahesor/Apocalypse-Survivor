@@ -1,3 +1,5 @@
+#>@private as:player/stats/consumed/water
+
 execute store result score #add calculator run data get storage ram: data.food.water
 
 scoreboard players operation @s water += #add calculator

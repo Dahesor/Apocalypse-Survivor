@@ -1,3 +1,6 @@
+#>as:player/stats/consumed/trigged
+# @private within as:consume
+
 advancement revoke @s only as:consume/food
 
 data modify storage ram: data set value {}

@@ -1,3 +1,6 @@
+#>registry:item/treasure/legendary/gold_statue
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:gold_statue",\
     rarity:"legendary",\

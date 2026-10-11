@@ -1,3 +1,6 @@
+#>op:group/self/check_status
+# @private within op:
+
 scoreboard players reset @s zzzgroup_update
 execute at @s run playsound entity.experience_orb.pickup master @s ~ ~ ~ 1 1 1
 

@@ -9,7 +9,7 @@ execute if score @s privilege_trigger matches 1.. run function op:trigger/trig
 execute if score @s privilege_input matches 1.. run function op:trigger/input
 execute if score @s leave_game matches 1.. run function as:player/left_game
 
-#> Players Only
+# Players Only
 execute unless predicate as:is_player run return 1
 
 execute if score @s effect_update matches 1.. run scoreboard players remove @s effect_update 1

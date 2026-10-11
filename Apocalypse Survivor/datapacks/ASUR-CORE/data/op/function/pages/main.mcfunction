@@ -1,3 +1,8 @@
+#>@public op:pages/main
+# Show the main op menu to the current player
+# The player will be authenticated before accessing the menu
+# @context as the player viewing the menu
+
 execute unless function op:auth/validate run return run function op:auth/menu
 
 dialog show @s {\

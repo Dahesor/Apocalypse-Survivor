@@ -1,3 +1,6 @@
+#>registry:item/treasure/legendary/microphone
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:microphone",\
     rarity:"legendary",\

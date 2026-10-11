@@ -1,3 +1,5 @@
+#>@private as:player/stats/vanilla_food/exhust_12
+
 tag @s add dfh.__inventory_changed
 
 scoreboard players set $saddle_item calculator 0

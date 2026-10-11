@@ -1,3 +1,5 @@
+#>@private as:player/stats/vanilla_food/exhust
+
 execute unless score @s monitor.food matches 1.. run return run function as:player/stats/vanilla_food/exhust_1
 
 scoreboard players operation #temp calculator = @s monitor.food

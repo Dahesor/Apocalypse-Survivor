@@ -1,3 +1,5 @@
+#>@protected registry:__parse__/item/new
+
 #init
 data modify storage registry:item ztemp set from storage registry:item new
 data modify storage registry:item ztemp.display set value {lore_resolved:[]}

@@ -1,3 +1,6 @@
+#>as:core/root/forceload
+# @private within as:core
+
 say Adding ROOT to forceload
 
 data modify storage dlm: ticket set value {dimension:"overworld",id:"as:ROOT",life:{type:"indefinite"},on_load:"say ROOT loaded",pos:[0,0]}

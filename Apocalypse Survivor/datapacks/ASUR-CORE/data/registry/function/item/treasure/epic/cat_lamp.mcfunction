@@ -1,3 +1,6 @@
+#>registry:item/treasure/epic/cat_lamp
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:cat_lamp",\
     rarity:"epic",\

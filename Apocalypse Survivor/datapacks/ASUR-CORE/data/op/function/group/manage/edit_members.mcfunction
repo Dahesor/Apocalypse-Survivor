@@ -1,3 +1,6 @@
+#>op:group/manage/edit_members
+# @private within op:
+
 $data modify storage persistent: this set from storage persistent: groups[{id:$(id)}]
 
 data modify storage ram: dialog.dialog set value {type:"confirmation",after_action:"none",pause:false,\

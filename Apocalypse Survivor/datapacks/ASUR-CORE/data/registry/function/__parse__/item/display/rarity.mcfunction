@@ -1,3 +1,5 @@
+#>@protected registry:__parse__/item/display/rarity
+
 execute if data storage registry:item new{rarity:"initial"} run data modify storage ram: color set value "gray"
 execute if data storage registry:item new{rarity:"common"} run data modify storage ram: color set value "white"
 execute if data storage registry:item new{rarity:"refined"} run data modify storage ram: color set value "green"

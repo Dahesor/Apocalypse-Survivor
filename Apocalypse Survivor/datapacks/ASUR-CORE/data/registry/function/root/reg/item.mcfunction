@@ -1,3 +1,6 @@
+#> registry:root/reg/item
+# @private within registry:root
+
 data modify storage registry:root new set value {\
     id:"as:item",\
     folder:"item",\

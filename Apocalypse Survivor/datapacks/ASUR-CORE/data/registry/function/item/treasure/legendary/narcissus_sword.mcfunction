@@ -1,3 +1,6 @@
+#>registry:item/treasure/legendary/narcissus_sword
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:narcissus_sword",\
     rarity:"legendary",\

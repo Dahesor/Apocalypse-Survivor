@@ -1,3 +1,6 @@
+#>op:group/new/form
+# @private within op:
+
 dialog clear @s
 $data modify storage ram: form set value $(form)
 

@@ -1,3 +1,6 @@
+#>registry:item/treasure/mythic/emerald_necklace
+# @protected within registry:item
+
 data modify storage registry:item new set value {\
     id:"treasure:emerald_necklace",\
     rarity:"mythic",\

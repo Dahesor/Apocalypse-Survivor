@@ -1,3 +1,6 @@
+#>op:group/manage/edit/entry
+# @private within op:
+
 execute unless data storage ram: form.member_list[0] run return 1
 
 data modify storage run: name set from storage ram: form.member_list[0]

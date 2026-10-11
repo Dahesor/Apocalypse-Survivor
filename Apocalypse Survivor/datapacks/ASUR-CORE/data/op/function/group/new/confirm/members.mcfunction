@@ -1,3 +1,6 @@
+#>op:group/new/confirm/members
+# @private within op:
+
 data modify storage ram: dialog.dialog.body[1].contents append value "\n\n"
 data modify storage ram: dialog.dialog.body[1].contents append value [{object:"player",player:"Steve"}," ","Steve"]
 data modify storage ram: dialog.dialog.body[1].contents[-1][0].player set from storage run: list[0]

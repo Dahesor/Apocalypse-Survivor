@@ -1,3 +1,6 @@
+#>op:pages/group/front
+# @private within op:
+
 data modify storage ram: dialog.dialog set value {type:"multi_action",after_action:"none",pause:false,\
     can_close_with_escape:true,columns:2,\
     title:{translate:"op.menu.group.title"},\

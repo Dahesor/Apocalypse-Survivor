@@ -1,3 +1,6 @@
+#>op:load
+# @protected within minecraft
+
 scoreboard objectives add privilege_trigger trigger
 scoreboard objectives add privilege_input trigger
 scoreboard objectives add privilege_waiting dummy
@@ -7,4 +10,6 @@ scoreboard objectives add group dummy
 
 scoreboard players set OP_AUTH_EXPIRE_SEC op_auth 1800
 
+#>@private stopwatch op:auth
+# Stopwatch for op authentication
 stopwatch create op:auth

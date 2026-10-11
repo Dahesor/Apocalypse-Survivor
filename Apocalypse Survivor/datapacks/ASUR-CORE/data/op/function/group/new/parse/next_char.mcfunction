@@ -1,3 +1,6 @@
+#>op:group/new/parse/next_char
+# @private within op:
+
 execute if data storage ram: form{members:""} run return run execute unless data storage ram: {this:""} run function op:group/new/parse/try_add_player
 data modify storage ram: char set string storage ram: form.members 0 1
 

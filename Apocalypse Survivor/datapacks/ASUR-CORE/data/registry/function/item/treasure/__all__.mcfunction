@@ -1,3 +1,5 @@
+#>@protected registry:item/treasure/__all__
+
 function registry:item/treasure/legendary/nether_star
 function registry:item/treasure/legendary/diamond
 function registry:item/treasure/legendary/microphone

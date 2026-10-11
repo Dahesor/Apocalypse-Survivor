@@ -1,3 +1,9 @@
+#>as:player/stats/vanilla_food/check
+# @private within as:player
+
+#>@public tag no_sprint
+# Player with this tag cannot sprint
+
 scoreboard players set #threshold.exhust calculator 19
 scoreboard players set #threshold.repair calculator 18
 execute if entity @s[tag=no_sprint] run scoreboard players set #threshold.exhust calculator 5

@@ -1,3 +1,5 @@
+#>@protected registry:__parse__/item/display/lore/__line
+
 # Add the lore line
 $data modify storage registry:item ztemp.display.lore_resolved append value {translate:"item.$(str).lore.$(i)",color:"gray",italic:false}
 

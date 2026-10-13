@@ -1,0 +1,19 @@
+use::java::util::text::Text
+
+dispatch minecraft:storage["core:"] to struct{
+    ram?: struct{
+        text?: Text,
+        message?: string,
+        type?: LogType,
+        time?: int,
+    },
+    log?: [Log],
+}
+
+struct Log {
+    text?: Text,
+    message?: string,
+    type?: LogType,
+}
+
+type LogType = ("error" | "warning" | "info")

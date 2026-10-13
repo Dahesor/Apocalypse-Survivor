@@ -4,3 +4,9 @@
 data modify storage registry:root entry set value []
 function #registry:root
 execute unless function registry:root/run run tellraw @a {color:"red",text:"[ERROR] Fatal Error: Registry init failed. Please report this issue to the developers"}
+
+
+#>@public storage registry:item
+# Registry for items
+#>@public storage registry:effect
+# Registry for effects

@@ -25,3 +25,12 @@ data modify storage dnt:ram in set from storage dnt:ram result
 function dnt:concat_splited
 scoreboard objectives remove calc.dnt
 return run data get storage dnt:ram out
+
+#>@private score $bracket
+#>@private score $key
+#>@private score $indent
+#>@private score $string
+#>@private score $list
+#>@private score $quoted
+#>@private score $quoted_end
+#>@private score $escape

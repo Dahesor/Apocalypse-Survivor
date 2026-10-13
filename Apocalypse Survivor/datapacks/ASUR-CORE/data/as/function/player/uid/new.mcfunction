@@ -1,4 +1,4 @@
-data modify storage as:player players append value {UID:-1,Name:"",UUID:"0-0-2-2-2"}
+data modify storage as:player players append value {UID:-1,Name:"",UUID:"0-0-2-2-2",effects:[]}
 
 execute store result score @s UID run scoreboard players add #NEXT_UID UID 1
 execute store result storage as:player players[-1].UID int 1 run scoreboard players get @s UID

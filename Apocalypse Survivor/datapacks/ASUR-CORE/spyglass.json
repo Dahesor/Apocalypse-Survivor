@@ -3,6 +3,8 @@
         "gameVersion": "26.3",
         "dependencies": [
             "file:///C:/Users/dahes/Documents/.minecraft/versions/Apocalypse%20Survivor/dependency/",
+            "file:///C:/Users/dahes/OneDrive/Desktop/Projects/Actionbar-Mixer-for-Minecraft",
+            "file:///C:/Users/dahes/OneDrive/Desktop/Projects/DNT-Dahesor-NBT-Transformer",
             "@vanilla-datapack",
 			"@vanilla-resourcepack",
 			"@vanilla-mcdoc"

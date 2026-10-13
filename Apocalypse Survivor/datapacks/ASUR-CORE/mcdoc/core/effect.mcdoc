@@ -1,19 +1,31 @@
+use ::java::util::text::Text
+
 dispatch minecraft:storage["as:effect"] to struct {
     fTick?: [TrackingTimer],
     sTick?: [TrackingTimer],
     this?: [TrackingTimer],
+    save?: [TrackingTimer],
     ztemp?: TrackingTimer,
     mapping?: struct{
         [Progresses]?: string,
-    }
+    },
+    return?: string,
+    text?: Text,
 }
 
 struct TrackingTimer{
-    valid?: boolean,
+    /// If still active
+    valid?: struct{
+        flag?: boolean,
+    },
+    /// The maximum duration of the timer
     maximum?: int,
+    /// The remaining duration of the timer
     remaining?: int,
+    /// The char being rendered
     char?: string,
+    /// Step progress of the timer
     progress?: int @ ..20,
 }
 
-type Progresses = ("1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"10"|"11"|"12"|"13"|"14"|"15"|"16"|"17"|"18"|"19"|"20")
+type Progresses = ("0"|"1"|"2"|"3"|"4"|"5"|"6"|"7"|"8"|"9"|"10"|"11"|"12"|"13"|"14"|"15"|"16"|"17"|"18"|"19"|"20")

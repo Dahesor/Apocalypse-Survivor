@@ -1,11 +1,15 @@
+use::reg::effect::EffectInstance
+
 dispatch minecraft:storage["as:player"] to struct{
     players?: [Player],
     temp?: Player,
     "__UIDGET__"?: struct{UID?: int},
+    keffects?: [EffectInstance],
 }
 
 struct Player{
     UID?: int,
     Name?: string,
     UUID?: #[uuid] string,
+    effects?: [EffectInstance],
 }

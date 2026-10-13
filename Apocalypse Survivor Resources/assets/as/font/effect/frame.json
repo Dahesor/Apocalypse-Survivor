@@ -1,0 +1,25 @@
+{
+    "providers": [
+        {
+            "type": "reference",
+            "id": "include/space"
+        },
+        {
+            "type": "reference",
+            "id": "as:effect/space"
+        },
+        {
+            "type": "bitmap",
+            "ascent": 15,
+            "height": 16,
+            "file": "as:effects/frame/mod.png",
+            "chars": [
+                "zabcd",
+                "efghi",
+                "jklmn",
+                "opqrs",
+                "tuvwx"
+            ]
+        }
+    ]
+}

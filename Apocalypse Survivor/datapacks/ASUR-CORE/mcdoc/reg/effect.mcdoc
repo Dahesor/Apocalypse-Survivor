@@ -4,43 +4,73 @@ use::java::world::item::ItemStack
 use ::java::world::component::CustomData
 
 dispatch minecraft:storage["registry:effect"] to struct {
-    entry?: [StatusRegistryEntry],
-    new?: NewStatusEntry,
-    this?: StatusRegistryEntry,
-    ztemp?: StatusRegistryEntry,
+    entry?: [EffectRegistryEntry],
+    new?: NewEffectEntry,
+    this?: EffectInstance,
+    ztemp?: EffectInstance,
 }
 
-struct StatusRegistryEntry {
-    ...StatusEntry,
-    id?: #[id="as:status"] string,
+struct EffectInstance{
+    ...EffectRegistryEntry,
+    ...EffectInstanceData,
+}
+
+struct EffectInstanceData{
+    /// Tick when the effect expires.
+    until?: int,
+    /// Initial duration of the effect.
+    i_duration?: int,
+    /// Initial intensity of the effect.
+    j_intensity?: int,
+    /// If the effect is hidden in actionbar.
+    hidden?: boolean,
+    /// The same effect with a lower intensity but longer duration.
+    child?: EffectInstanceData,
+    /// The frame allocated
+    frame?: string,
+}
+
+struct EffectRegistryEntry {
+    ...EfectEntry,
+    id?: #[id="as:effect"] string,
     display?: struct{
         Name?: Text,
         Description?: Text,
     }
 }
 
-struct NewStatusEntry {
-    ...StatusEntry,
+struct NewEffectEntry {
+    ...EfectEntry,
     id?: #[id(registry="as:effect",definition=true)] string,
 }
 
-struct StatusEntry{
-    /// If the status needs a hook
+struct EfectEntry{
+    /// If the effect needs a hook
     hooks?: struct{
-        /// Run when the status is applied
-        on_apply?: #[command] string,
-        /// Run when the status is removed
-        after_remove?: #[command] string,
-        /// Run when the status is changed
-        when_changed?: #[command] string,
+        /// Run when the effect is applied
+        on_apply?: EffectHook,
+        /// Run when the effect is removed
+        before_remove?: EffectHook,
+        /// Run when the intensity of the effect changes
+        intensity_change?: EffectHook,
         /// Run for players that was offline
-        to_clean?: #[command] string,
+        to_clean?: EffectHook,
     },
-    /// If the status needs a ticker function
+    /// If the effect needs a ticker function
     ticker?: struct{
-        every?: ("tick"|"second"),
+        every?: ("tick"|"second"|"tenth"),
         run?: #[command] string,
     },
-    /// Icon of the status
+    /// Icon of the effect
     icon?: string,
+    /// Buff or debuff
+    polarity?: (1 | -1 |"other"),
+    /// If the status may be purified
+    may_purify?: int @ 0..,
+    /// The piority being purified
+    severity?: int @ 0..,
+}
+
+struct EffectHook{
+    run?: #[command] string
 }

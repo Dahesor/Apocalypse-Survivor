@@ -8,3 +8,5 @@ data modify storage dnt:ram result set value []
 function dnt:private/concat/initial_loop
 data modify storage dnt:ram concat.in set from storage dnt:ram result
 function dnt:private/concat/layer_loop
+
+#>@private score $slash_count

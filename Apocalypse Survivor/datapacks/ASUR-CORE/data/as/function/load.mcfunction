@@ -20,7 +20,11 @@ scoreboard objectives add Options dummy
 scoreboard objectives add join_game dummy
 scoreboard objectives add leave_game custom:leave_game
 scoreboard objectives add revive_cd dummy
-scoreboard objectives add effect_update dummy
+
+#>objective effect.next_until
+# @private within as:player
+# The time when the player's shortest effect is due
+scoreboard objectives add effect.next_until dummy
 
 #Consts
 scoreboard players set #100 calculator 100
@@ -44,7 +48,14 @@ team modify blue nametagVisibility hideForOtherTeams
 # Storage inits
 data modify storage as:player __UIDGET__ set value {UID:0}
 data modify storage ram: i set value {d:0d,dx:0,dy:0,dz:0,f:0f,i:0,j:0,str:"",x:0,y:0,z:0,id:""}
-data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d","5":"e","6":"f","7":"g","8":"h","9":"i","10":"j","11":"k","12":"l","13":"m","14":"n","15":"o","16":"p","17":"q","18":"r","19":"s","20":"s"}
+data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d","5":"e","6":"f","7":"g","8":"h","9":"i","10":"j","11":"k","12":"l","13":"m","14":"n","15":"o","16":"p","17":"q","18":"r","19":"s","20":"t","0":"z"}
+
+#>@internal storage core: The main storage for core data
+#>@internal storage ram: Temporary storage for runtime data with type checking
+#>@internal storage run: Temporary storage for runtime data without type checking
+#>@internal storage persistent: Storage for data that persists and can be transferred between map instances
+#>@internal storage as:player Storage for player-specific data
+#>@internal storage as:effect Storage for effect status bar data
 
 #>@internal tag __this
 # temp tag to mark a certain entity

@@ -1,9 +1,7 @@
-data modify storage as:effect this[0].remaining set compute default integer as:core/effect/step_remaining
-execute store result score $% calculator run compute default integer as:core/effect/get_progress
+#>@private as:player/effect/render/update/this
 
-execute unless predicate {type:"int_value_check",test:{type:"score",score:"calculator",target:{type:"fixed",name:"$%"}},value:{type:"storage",storage:"as:effect",path:"this[0].progress"}} run function as:player/effect/render/update/map_char
+execute if data storage as:effect this[0].valid{flag:false} run return run function as:player/effect/render/update/next
 
-data modify storage as:effect this append from storage as:effect this[0]
-data remove storage as:effect this[0]
-scoreboard players remove #count calculator 1
-execute if score #count calculator matches 1.. run function as:player/effect/render/update/this
+function as:player/effect/render/update/refersh
+
+function as:player/effect/render/update/next

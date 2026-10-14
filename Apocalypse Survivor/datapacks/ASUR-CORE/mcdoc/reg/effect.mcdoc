@@ -2,6 +2,7 @@ use::java::util::text::Text
 use::java::util::text::TextStyle
 use::java::world::item::ItemStack
 use ::java::world::component::CustomData
+use::reg::root::CommonFields
 
 dispatch minecraft:storage["registry:effect"] to struct {
     entry?: [EffectRegistryEntry],
@@ -31,7 +32,7 @@ struct EffectInstanceData{
 }
 
 struct EffectRegistryEntry {
-    ...EfectEntry,
+    ...EffectEntry,
     id?: #[id="as:effect"] string,
     display?: struct{
         Name?: Text,
@@ -40,11 +41,11 @@ struct EffectRegistryEntry {
 }
 
 struct NewEffectEntry {
-    ...EfectEntry,
+    ...EffectEntry,
     id?: #[id(registry="as:effect",definition=true)] string,
 }
 
-struct EfectEntry{
+struct EffectEntry{
     /// If the effect needs a hook
     hooks?: struct{
         /// Run when the effect is applied
@@ -58,7 +59,7 @@ struct EfectEntry{
     },
     /// If the effect needs a ticker function
     ticker?: struct{
-        every?: ("tick"|"second"|"tenth"),
+        every?: ("tick"|"second"|"4_ticks"),
         run?: #[command] string,
     },
     /// Icon of the effect
@@ -69,6 +70,7 @@ struct EfectEntry{
     may_purify?: int @ 0..,
     /// The piority being purified
     severity?: int @ 0..,
+    ...CommonFields,
 }
 
 struct EffectHook{

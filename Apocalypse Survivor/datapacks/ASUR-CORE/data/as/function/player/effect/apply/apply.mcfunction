@@ -9,4 +9,7 @@ data modify storage as:player keffects append from storage registry:effect ztemp
 execute store result score $new_until calculator run data get storage as:player keffects[0].until
 function as:player/effect/apply/loop_apply
 
+execute if data storage registry:effect ztemp.ticker{every:"tick"} run tag @s add core.effect_ticker
+execute if data storage registry:effect ztemp.ticker{every:"4_ticks"} run tag @s add core.effect_ticker_4th
+execute if data storage registry:effect ztemp.ticker{every:"second"} run tag @s add core.effect_ticker_slow
 execute if data storage registry:effect ztemp.hooks.on_apply run function as:core/run with storage registry:effect ztemp.hooks.on_apply

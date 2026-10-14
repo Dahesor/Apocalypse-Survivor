@@ -40,4 +40,5 @@ execute if data storage registry:item ztemp.data.treasure run function registry:
 
 #Add to Reg
 data modify storage registry:item ztemp.stack.components merge from storage ram: components
+data modify storage registry:item ztemp.load set value {v:true}
 data modify storage registry:item entry append from storage registry:item ztemp

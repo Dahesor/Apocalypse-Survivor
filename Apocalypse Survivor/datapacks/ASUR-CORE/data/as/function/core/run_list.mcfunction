@@ -1,7 +1,7 @@
 #>@public as:core/run_list
 # Run multiple commands in order
 # @input storage ram: run_list
-#   The commands to run. **The input will be deleted after execution.**
+#   The commands to run. **The input will be deleted after execution.** Each entry should be in the form of `[{run:"<cmd>"}]`.
 
 execute unless data storage ram: run_list[0].run run return 1
 

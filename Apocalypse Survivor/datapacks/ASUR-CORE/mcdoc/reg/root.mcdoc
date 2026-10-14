@@ -7,6 +7,12 @@ dispatch minecraft:storage["registry:root"] to struct {
     ztemp?: RootRegEntry,
 }
 
+struct CommonFields{
+    load?: struct{
+        v?: true,
+    }
+}
+
 struct RootRegEntry{
     /// ID of the registry
     id?: #[id="as:reg"] string,

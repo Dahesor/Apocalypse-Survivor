@@ -1,7 +1,8 @@
 use::java::util::text::Text
 use::java::util::text::TextStyle
 use::java::world::item::ItemStack
-use ::java::world::component::CustomData
+use::java::world::component::CustomData
+use::reg::root::CommonFields
 
 dispatch minecraft:storage["registry:item"] to struct {
     entry?: [ItemRegistryEntry],
@@ -35,6 +36,7 @@ struct ItemEntry{
     model?: #[id="item_definition"] string,
     /// How many items can be stacked together
     max_stack_size?: int @ 1..99,
+    ...CommonFields,
 }
 
 struct TextDescription{

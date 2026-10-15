@@ -67,7 +67,7 @@ struct EffectEntry{
     /// Buff or debuff
     polarity?: (1 | -1 |"other"),
     /// If the status may be purified
-    may_purify?: int @ 0..,
+    resist_purify?: int @ 0..,
     /// The piority being purified
     severity?: int @ 0..,
     ...CommonFields,

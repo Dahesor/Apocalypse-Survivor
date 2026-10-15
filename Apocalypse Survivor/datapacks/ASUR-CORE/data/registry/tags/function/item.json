@@ -1,6 +1,7 @@
 {
     "values": [
         "registry:item/food/__all__",
-        "registry:item/treasure/__all__"
+        "registry:item/treasure/__all__",
+        "registry:item/equipment/__all__"
     ]
 }

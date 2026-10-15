@@ -1,6 +1,4 @@
-data modify storage registry:effect this set value {id:"buff:test",i_duration:400}
-function as:player/effect/apply_this_only
-data modify storage registry:effect this set value {id:"buff:test2",i_duration:300}
-function as:player/effect/apply_this_only
-data modify storage registry:effect this set value {id:"buff:tester",i_duration:500}
-function as:player/effect/apply_this_only
+data modify storage registry:item this set value {id:"equipment:armor/diamond_boots"}
+function registry:__get__/item/give_single
+data modify storage registry:item this set value {id:"equipment:armor/diamond_chestplate"}
+function registry:__get__/item/give_single

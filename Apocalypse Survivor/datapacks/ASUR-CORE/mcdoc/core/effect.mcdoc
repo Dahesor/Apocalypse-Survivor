@@ -1,4 +1,6 @@
 use ::java::util::text::Text
+use ::reg::effect::EffectInstanceData
+use ::reg::effect::EffectInstance
 
 dispatch minecraft:storage["as:effect"] to struct {
     fTick?: [TrackingTimer],
@@ -11,6 +13,15 @@ dispatch minecraft:storage["as:effect"] to struct {
     },
     return?: string,
     text?: Text,
+    children?: [EffectInstanceData],
+    child?: EffectInstanceData,
+    params?: OnChangeCallParams,
+    inserts?: [EffectInstance],
+}
+
+struct OnChangeCallParams{
+    old?: EffectInstanceData,
+    new?: EffectInstanceData,
 }
 
 struct TrackingTimer{

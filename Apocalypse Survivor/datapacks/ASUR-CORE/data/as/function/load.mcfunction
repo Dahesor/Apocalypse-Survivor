@@ -63,3 +63,11 @@ data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d"
 # **must be removed within context**
 
 #>@internal score #count calculator
+
+#>@public tag trigger.ignore_inventory Some advancement inventory_change may ignore players with this tag
+
+#>@public predicate as:is_alive_player
+#>@public predicate as:is_player true if the player is a player instead of a spectator
+#>@public predicate as:player/is_reviving true if the player is currently in the process of reviving
+#>@internal predicate as:player/has_hud
+#>@internal predicate as:player/listen_to_inventory_change

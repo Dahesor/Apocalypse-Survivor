@@ -1,4 +1,4 @@
-#>@private as:player/effect/apply/loop_apply
+#>@private as:player/effect/modify/loop_apply
 
 #>@local score $new_until
 # The duration of the new instance
@@ -12,4 +12,4 @@ execute if score $until calculator >= $new_until calculator run return run data 
 
 data modify storage as:player keffects insert -2 from storage as:player players[0].effects[0]
 data remove storage as:player players[0].effects[0]
-function as:player/effect/apply/loop_apply
+function as:player/effect/modify/loop_apply

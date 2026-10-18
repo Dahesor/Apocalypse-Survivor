@@ -1,5 +1,7 @@
 #>mech:vision/invi/show_armor
-# @private within mech:
+# @private within mech:vision
+
+tag @s add trigger.ignore_inventory
 
 item replace entity 0-0-0-0-0 container.* with air
 item override entity 0-0-0-0-0 container.* from entity @s armor.*
@@ -9,3 +11,5 @@ execute store result score #count calculator run data get storage ram: container
 execute if score #count calculator matches 1.. run function mech:vision/invi/_process_showing
 data modify entity 0-0-0-0-0 Items set from storage ram: container
 item override entity @s armor.* from entity 0-0-0-0-0 container.*
+
+tag @s remove trigger.ignore_inventory

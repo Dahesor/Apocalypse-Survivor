@@ -8,7 +8,7 @@
 #>@private tag core.effect_ticker_4th
 #>@private tag core.effect_ticker_slow
 
-execute if score @s effect.next_until >= $gametime calculator run function as:player/effect/remove/full_clean
+execute if score @s effect.next_until < $gametime data run function as:player/effect/remove/full_clean
 
 execute if entity @s[tag=core.effect_ticker] run function as:player/effect/tick/per_tick
 execute if score #loop_4 calculator matches 1 if entity @s[tag=core.effect_ticker_4th] run function as:player/effect/tick/per_4_tick

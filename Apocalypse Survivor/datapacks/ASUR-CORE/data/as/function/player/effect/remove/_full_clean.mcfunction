@@ -7,8 +7,6 @@ execute store result score $until calculator run data get storage as:player play
 
 execute if score $until calculator >= $gametime data run return 1
 
-# Run hook
-execute if data storage as:player players[0].effects[0].hooks.before_remove run function as:core/run with storage as:player players[0].effects[0].hooks.before_remove
+function as:player/effect/remove/expired
 
-data remove storage as:player players[0].effects[0]
 function as:player/effect/remove/_full_clean

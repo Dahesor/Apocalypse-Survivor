@@ -1,19 +1,25 @@
-use::java::util::text::Text
-use::java::util::text::TextStyle
-use::java::world::item::ItemStack
+use ::java::util::text::Text
+use ::java::util::text::TextStyle
+use ::java::world::item::ItemStack
 use ::java::world::component::CustomData
-use::reg::root::CommonFields
+use ::reg::root::CommonFields
 
 dispatch minecraft:storage["registry:effect"] to struct {
     entry?: [EffectRegistryEntry],
     new?: NewEffectEntry,
-    this?: EffectInstance,
+    this?: NewEffectInstance,
     ztemp?: EffectInstance,
 }
 
-struct EffectInstance{
+struct NewEffectInstance{
     ...EffectRegistryEntry,
     ...EffectInstanceData,
+}
+
+struct EffectInstance{
+    ...NewEffectInstance,
+    /// The same effect with a lower intensity but longer duration.
+    child?: [EffectInstanceData],
 }
 
 struct EffectInstanceData{
@@ -25,10 +31,10 @@ struct EffectInstanceData{
     j_intensity?: int,
     /// If the effect is hidden in actionbar.
     hidden?: boolean,
-    /// The same effect with a lower intensity but longer duration.
-    child?: EffectInstanceData,
     /// The frame allocated
     frame?: string,
+    /// flag for validation
+    valid?: boolean,
 }
 
 struct EffectRegistryEntry {
@@ -53,7 +59,7 @@ struct EffectEntry{
         /// Run when the effect is removed
         before_remove?: EffectHook,
         /// Run when the intensity of the effect changes
-        intensity_change?: EffectHook,
+        instance_change?: EffectHook,
         /// Run for players that was offline
         to_clean?: EffectHook,
     },

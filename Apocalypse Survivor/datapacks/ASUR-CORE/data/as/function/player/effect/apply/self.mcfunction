@@ -1,11 +1,14 @@
 #>@public as:player/effect/apply/self
-# Applies an effect instance to the this player
+# Applies an effect instance to this player
 # The instance must be created and allocated for slots beforehand
 # @context the player receiving the effect
 # @input storage registry:effect this
 #   The full effect instance to be applied to the player
 
+#>@private score $instance_change calculator
+
 # Apply the new instance
+scoreboard players set $instance_change calculator 0
 execute if function as:player/effect/apply/get run function as:player/effect/apply/apply
 
 tag @s add core.has_effect

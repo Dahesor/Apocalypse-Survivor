@@ -2,8 +2,12 @@
 # @private within %parent/%parent
 # Check and clean all expired effects
 
+data modify storage as:effect inserts set value []
+
 function as:player/uid/get_self
 function as:player/effect/remove/_full_clean
+
+execute if data storage as:effect inserts[0] run function as:player/effect/modify/insert_instances
 
 scoreboard players set @s effect.next_until 2147483647
 execute if data storage as:player players[0].effects[0] store result score @s effect.next_until run data get storage as:player players[0].effects[0].until

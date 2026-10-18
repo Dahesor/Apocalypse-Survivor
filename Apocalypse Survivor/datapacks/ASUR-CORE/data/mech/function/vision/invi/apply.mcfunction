@@ -1,4 +1,5 @@
 #>@internal mech:vision/invi/apply
+# apply invisibility to the player
 
 effect give @s invisibility infinite 0 true
 function mech:vision/invi/hide_armor

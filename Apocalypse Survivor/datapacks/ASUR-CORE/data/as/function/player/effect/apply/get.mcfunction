@@ -29,7 +29,7 @@ execute if predicate {type:"all_of",terms:[\
 ]} \
    run return fail
 
-# If both time and intensity is larger or equal than the old effect, replace it
+# If both time and intensity is larger or equal than the old effect, replace it and verify its children
 execute if predicate {type:"all_of",terms:[\
     {\
         type:"int_value_check",\
@@ -42,7 +42,7 @@ execute if predicate {type:"all_of",terms:[\
         test:{min:{type:"storage",storage:"as:player",path:"keffects[0].j_intensity"}}\
     },\
 ]} \
-   run return run data modify storage as:player keffects[0] set from storage registry:effect this
+   run return run function as:player/effect/apply/get/verify_children
 
 # If new intensity is large but new duration is small, keep the old one in children
 execute if predicate {type:"all_of",terms:[\
@@ -52,15 +52,10 @@ execute if predicate {type:"all_of",terms:[\
         test:{min:{type:"storage",storage:"as:player",path:"keffects[0].j_intensity"}}\
     },\
 ]} \
-    run return run function as:player/effect/apply/use_old_as_children
+    run return run function as:player/effect/apply/get/use_old_as_children
 
-# Else, save this as the old one's children
+# else, save this as the old one's children
 
-## won't fix: this override the old child
+function as:player/effect/apply/get/child
 
-data modify storage as:player keffects[0].child.i_duration set from storage registry:effect this.child.i_duration
-data modify storage as:player keffects[0].child.j_intensity set from storage registry:effect this.child.j_intensity
-data modify storage as:player keffects[0].child.until set from storage registry:effect this.child.until
-data modify storage as:player keffects[0].child.hidden set from storage registry:effect this.child.hidden
-data modify storage as:player keffects[0].child.frame set from storage registry:effect this.child.frame
 return 1

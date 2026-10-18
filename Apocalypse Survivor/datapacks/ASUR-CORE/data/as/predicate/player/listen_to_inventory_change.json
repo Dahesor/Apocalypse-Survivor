@@ -1,0 +1,11 @@
+{
+    "type": "entity_properties",
+    "entity": "this",
+    "predicate": {
+        "entity_tags": {
+            "none_of": [
+                "trigger.ignore_inventory"
+            ]
+        }
+    }
+}

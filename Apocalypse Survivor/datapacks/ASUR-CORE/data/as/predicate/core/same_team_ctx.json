@@ -1,0 +1,53 @@
+{
+    "type": "any_of",
+    "terms": [
+        {
+            "type": "all_of",
+            "terms": [
+                {
+                    "type": "int_value_check",
+                    "test": 1,
+                    "value": {
+                        "type": "score",
+                        "score": "calculator",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$context.team"
+                        }
+                    }
+                },
+                {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "red"
+                    }
+                }
+            ]
+        },
+        {
+            "type": "all_of",
+            "terms": [
+                {
+                    "type": "int_value_check",
+                    "test": 2,
+                    "value": {
+                        "type": "score",
+                        "score": "calculator",
+                        "target": {
+                            "type": "fixed",
+                            "name": "$context.team"
+                        }
+                    }
+                },
+                {
+                    "type": "entity_properties",
+                    "entity": "this",
+                    "predicate": {
+                        "team": "blue"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -21,6 +21,9 @@ scoreboard objectives add join_game dummy
 scoreboard objectives add leave_game custom:leave_game
 scoreboard objectives add revive_cd dummy
 
+#>@internal objective hiding
+scoreboard objectives add hiding dummy
+
 #>objective effect.next_until
 # @private within as:player
 # The time when the player's shortest effect is due
@@ -62,7 +65,12 @@ data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d"
 #
 # **must be removed within context**
 
-#>@internal score #count calculator
+#>@public score #count calculator
+#   Input count value
+#>@public score #in_x calculator
+#   Input X coord
+#>@public score #in_z calculator
+#   Input Z coord
 
 #>@public tag trigger.ignore_inventory Some advancement inventory_change may ignore players with this tag
 

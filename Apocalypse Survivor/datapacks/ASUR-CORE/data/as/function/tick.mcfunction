@@ -22,7 +22,6 @@ execute if score #loop_4 calculator matches 4.. run scoreboard players set #loop
 scoreboard players add #toggle calculator 1
 execute if score #toggle calculator matches 2.. run scoreboard players set #toggle calculator 0
 
-
 execute as @a run function as:player/tick
 
 #Step Effect Icon Progress

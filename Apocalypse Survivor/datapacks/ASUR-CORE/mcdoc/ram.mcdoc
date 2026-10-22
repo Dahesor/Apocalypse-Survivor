@@ -22,7 +22,8 @@ dispatch minecraft:storage["ram:"] to struct Ram{
     this?: any,
     item?: SlottedItem<byte @ 0..35>,
     container?: [SlottedItem<byte @ 0..35>],
-    run_list?: [struct{run?: #[command] string}]
+    run_list?: [struct{run?: #[command] string}],
+    Pos?: [double],
 }
 
 type TempInts = ("i"|"x"|"y"|"z"|"j"|"dx"|"dy"|"dz")

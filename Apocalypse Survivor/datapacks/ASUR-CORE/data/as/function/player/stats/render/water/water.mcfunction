@@ -1,3 +1,5 @@
+#>@private as:player/stats/render/water/water
+
 data modify storage dah:actbar new set value {id:"as:water",text:[{text:"+Qq.",font:"as:hud",shadow_color:0},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"*"},{text:"z"},{text:"-qW,"}]}
 
 execute if score @s monitor.air matches ..299 run data modify storage dah:actbar new.text[0].font set value "as:hud_above"

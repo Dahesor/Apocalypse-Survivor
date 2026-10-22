@@ -1,0 +1,9 @@
+{
+    "type": "entity_scores",
+    "entity": "this",
+    "scores": {
+        "hiding": {
+            "min": 1
+        }
+    }
+}

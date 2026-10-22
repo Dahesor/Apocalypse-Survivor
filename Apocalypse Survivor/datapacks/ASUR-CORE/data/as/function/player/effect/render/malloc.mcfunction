@@ -1,11 +1,15 @@
 #>@public as:player/effect/render/malloc
 # Request for a new slot for effect rendering
 # @input storage registry:effect this.i_duration
+# @input storage registry:effect this.hidden
+#   is the effect hidden. default false.
 # @writes storage as:effect return
 #   The path to the allocated slot in as:effect
 
 #>@private score $length
 # The length of the requested slot for effect rendering in ticks
+
+execute if data storage registry:effect this{hidden:true} run return run data modify storage as:effect return set value "NULL"
 
 execute store result score $length calculator run data get storage registry:effect this.i_duration
 

@@ -1,3 +1,5 @@
+#>@private as:player/stats/render/food/vegie
+
 scoreboard players operation $this calculator = @s food.vegie
 
 scoreboard players operation $this calculator /= #10 calculator

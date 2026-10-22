@@ -1,0 +1,13 @@
+{
+    "criteria": {
+        "in_tall_grass": {
+            "trigger": "enter_block",
+            "conditions": {
+                "blocks": "#mech:may_hide"
+            }
+        }
+    },
+    "rewards": {
+        "function": "mech:vision/grass/trigger"
+    }
+}

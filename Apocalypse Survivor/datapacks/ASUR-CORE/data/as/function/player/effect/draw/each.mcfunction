@@ -1,3 +1,5 @@
+#>@private as:player/effect/draw/each
+
 execute unless data storage as:player keffects[0] run return 1
 
 data modify storage dah:actbar new.text[1].extra append value "{"

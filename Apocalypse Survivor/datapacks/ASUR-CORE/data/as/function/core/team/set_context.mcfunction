@@ -10,5 +10,5 @@ execute if entity @s[team=blue] run scoreboard players set $context.team calcula
 
 #>@public predicate as:core/same_team_ctx
 # Checks if the executor is on the same team as the context
-# 
+#
 # Must run as:core/team/set_context before checking this predicate

@@ -13,13 +13,13 @@ execute if score #x calculator = #in_x calculator if score #z calculator = #in_z
 
 # return fail if too far
 execute if predicate {type:"any_of",terms:[\
-    {type:"int_value_check",test:{min:13},value:{type:"abs",input:{\
+    {type:"int_value_check",test:{min:21},value:{type:"abs",input:{\
         type:"sub",\
             left:{type:"score",score:"calculator",target:{type:"fixed",name:"#x"}},\
             right:{type:"score",score:"calculator",target:{type:"fixed",name:"#in_x"}}\
         }\
     }},\
-    {type:"int_value_check",test:{min:13},value:{type:"abs",input:{\
+    {type:"int_value_check",test:{min:21},value:{type:"abs",input:{\
         type:"sub",\
             left:{type:"score",score:"calculator",target:{type:"fixed",name:"#z"}},\
             right:{type:"score",score:"calculator",target:{type:"fixed",name:"#in_z"}}\

@@ -1,0 +1,6 @@
+{
+    "type": "all_of",
+    "terms": [
+        "mech:vision/is_hiding"
+    ]
+}

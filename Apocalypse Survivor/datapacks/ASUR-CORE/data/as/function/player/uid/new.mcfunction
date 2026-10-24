@@ -10,3 +10,6 @@ tag @s remove __this
 data modify storage as:player players[-1].Name set from entity 0-0-0-0-1 text.insertion
 function gu:convert with entity @s
 data modify storage as:player players[-1].UUID set from storage gu:main out
+
+
+scoreboard players set @s hiding 0

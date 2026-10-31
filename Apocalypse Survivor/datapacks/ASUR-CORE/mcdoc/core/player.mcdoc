@@ -5,6 +5,8 @@ dispatch minecraft:storage["as:player"] to struct{
     temp?: Player,
     "__UIDGET__"?: struct{UID?: int},
     keffects?: [EffectInstance],
+    gamers?: [int],
+    zprocessing?: [int],
 }
 
 struct Player{

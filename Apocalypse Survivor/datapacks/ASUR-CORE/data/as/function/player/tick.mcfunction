@@ -23,3 +23,7 @@ function as:player/stats/gamemode/gamemode
 function as:player/stats/vanilla_food/check
 
 function #as:player_tick
+
+
+
+#>@internal score $selected UID

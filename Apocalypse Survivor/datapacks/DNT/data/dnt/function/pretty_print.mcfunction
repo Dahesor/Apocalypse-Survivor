@@ -10,6 +10,8 @@
 # @writes storage dnt:ram out
 #   The output string
 
+#>@local score indent_space
+
 execute unless data storage dnt:ram in run return run function dnt:private/snbt/no_input
 scoreboard objectives remove calc.dnt
 scoreboard objectives add calc.dnt dummy

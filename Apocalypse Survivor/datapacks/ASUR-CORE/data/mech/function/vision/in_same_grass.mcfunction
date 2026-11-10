@@ -52,6 +52,8 @@ execute if score #count_z calculator matches ..-1 run scoreboard players operati
 scoreboard players add #count_z calculator 1
 data modify storage run: grid set value []
 
+#>@private score #last_reachable calculator
+
 scoreboard players set #last_reachable calculator 1
 function mech:vision/grass/node/each_z
 

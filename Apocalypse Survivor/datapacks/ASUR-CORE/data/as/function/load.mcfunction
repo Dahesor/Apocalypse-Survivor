@@ -71,6 +71,7 @@ data modify storage as:effect mapping set value {"1":"a","2":"b","3":"c","4":"d"
 #   Input X coord
 #>@public score #in_z calculator
 #   Input Z coord
+#>@internal score #return calculator
 
 #>@public tag trigger.ignore_inventory Some advancement inventory_change may ignore players with this tag
 

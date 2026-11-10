@@ -17,8 +17,7 @@
 #>@internal score $temp
 #>@internal score $this
 #>@internal score $total
+#>@internal score max_indent
 
 #>@internal objective asnbt.dnt
 #>@internal objective calc.dnt
-
-#>@public score UUUTEST
